@@ -1,0 +1,261 @@
+/* Index-specific responsive fixes */
+
+/* Ensure base flow & scrolling is normal on mobile */
+html, body { height: auto !important; min-height: 100%; overflow-x: hidden !important; }
+body { overflow-y: auto !important; }
+
+/* Make sure primary wrapper doesn't crop content */
+.grow { min-height: 0 !important; }
+
+/* Ensure all sections are visible and not hidden by animations before JS runs */
+section { display: block !important; visibility: visible !important; opacity: 1 !important; }
+
+/* Hero adjustments on small screens */
+section.wrapper.image-wrapper { padding-top: 3rem; padding-bottom: 2.5rem; }
+@media (max-width: 640px) { .wrapper.image-wrapper { padding-top: 2rem; padding-bottom: 2rem } }
+
+/* Make the hero's decorative doodles non-blocking */
+.wrapper img[alt=""], .wrapper img[class*="doodle"]{max-width:100%;height:auto;display:block;}
+
+/* Layout fix for the hero's second column (3-card area) — ensures a stacked layout on narrow screens */
+.hero-right-placeholder{display:flex;flex-direction:column;gap:1rem;padding:1rem}
+.hero-right-placeholder .card{border-radius:12px;padding:1rem;background:linear-gradient(180deg, rgba(255,255,255,0.65), rgba(255,255,255,0.25));-webkit-backdrop-filter: blur(6px);backdrop-filter: blur(6px);box-shadow:0 10px 30px rgba(0,0,0,0.06)}
+
+/* Large-screen "playing-card" animation — single-card visible at a time, slides in from the right, holds, slides out to the left, looped.
+   This is index-scoped and keeps the mobile stacked behavior intact. */
+@media (min-width: 0px){
+  .hero-right-placeholder{ /* stack area becomes a fixed stage on wide screens */
+    position:relative;
+    /* keep placeholder tall enough to avoid card clipping on tall cards */
+    min-height:44rem; /* default stage min-height, adjusted per-breakpoint below */
+    overflow:visible;
+    display:block;
+    padding:1.5rem 1rem;
+  }
+
+  .hero-right-placeholder .card{
+    position:absolute;
+    top:50%;
+    /* default on large screens: anchor to right, on small screens we'll center it with a different rule below */
+    right:1.25rem;
+    transform-origin:right center;
+    width: min(360px, calc(100% - 2rem));
+    max-width:calc(100% - 2rem);
+    opacity:0;
+    box-shadow:0 18px 40px rgba(0,0,0,0.08);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    transition:box-shadow .25s ease, transform .25s ease;
+    pointer-events:auto; /* allow clicks/keyboard focus */
+    cursor:pointer;
+    /* ensure animation applies final & initial frames so visibility is consistent */
+    animation-fill-mode: both;
+    animation-play-state: running;
+    /* add a subtle industrial background and a highlight shine overlay */
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.72), rgba(245,245,250,0.55));
+    overflow:hidden;
+  }
+
+  /* pseudo-shine / metallic texture to make cards feel 'industrial' */
+  .hero-right-placeholder .card::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background-image: linear-gradient(120deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 20%, rgba(0,0,0,0.02) 60%, rgba(255,255,255,0.06) 100%);
+    mix-blend-mode: overlay;
+    transform: translateX(-30%);
+    opacity: .9;
+    animation: card-shine 3s linear infinite;
+  }
+  }
+
+    /* One card visible at a time — use a 6s total duration (2s slot per card),
+       each card's visible window is centered and lasts roughly 1s for a crisp 'appear then vanish' feel. */
+    .hero-right-placeholder .card.card-1{ z-index:1030; animation: hero-card-loop 6s linear infinite; animation-delay:0s }
+    .hero-right-placeholder .card.card-2{ z-index:1020; animation: hero-card-loop 6s linear infinite; animation-delay:2s }
+    .hero-right-placeholder .card.card-3{ z-index:1010; animation: hero-card-loop 6s linear infinite; animation-delay:4s }
+
+  /* Slight hover lift for mouse users when a card is visible */
+  .hero-right-placeholder .card:hover{ transform: translateY(-50%) translateX(0) scale(1.03) rotateZ(-0.6deg); box-shadow:0 28px 60px rgba(0,0,0,0.14) }
+
+  @keyframes card-shine{
+    0%{ transform: translateX(-40%); opacity:.85 }
+    50%{ transform: translateX(40%); opacity:.95 }
+    100%{ transform: translateX(110%); opacity:.85 }
+  }
+
+  @keyframes hero-card-loop{
+    /* Life-cycle for a single card within a 12s cycle. Cards are visible in a single 3s window
+       inside their 4s slot (no overlap with other cards). */
+    /* card is anchored on the right (same spot) — enter from right, rest, then exit to right (re-using same area) */
+    0%   { opacity:0; transform: translateX(42%) translateY(-50%) rotateZ(-1deg) scale(0.95); visibility:hidden }
+    6%   { opacity:1; transform: translateX(0) translateY(-50%) rotateZ(-0.6deg) scale(1.02); visibility:visible }
+    24%  { opacity:1; transform: translateX(0) translateY(-50%) rotateZ(0deg) scale(1); visibility:visible }
+    30%  { opacity:0; transform: translateX(42%) translateY(-50%) rotateZ(0.8deg) scale(0.96); visibility:hidden }
+    /* ensure final frame stays off-right so the next loop re-enters cleanly */
+    100% { opacity:0; transform: translateX(42%) translateY(-50%) rotateZ(1deg) scale(0.96); visibility:hidden }
+  }
+
+  /* ensure card children render above the shine overlay */
+  .hero-right-placeholder .card > * { position: relative; z-index: 1 }
+
+  /* when the user hovers/focuses the placeholder or any card -> pause animations for better UX */
+  .hero-right-placeholder:hover .card,
+  .hero-right-placeholder:focus-within .card,
+  .hero-right-placeholder .card:focus{ animation-play-state: paused !important; }
+
+  /* decorative gear behind cards (positioned same right area) */
+  .hero-right-placeholder .hero-gears{ position:absolute; right:calc(1.25rem + 120px); top:50%; transform:translateY(-50%); z-index:2; pointer-events:none }
+  .hero-right-placeholder .hero-gears svg{ width:220px; height:220px; opacity:0.12 }
+  .hero-right-placeholder .hero-gears .gear-small{ transform-origin:50% 50%; animation: gear-rotate 8s linear infinite }
+  .hero-right-placeholder .hero-gears .gear-large{ transform-origin:50% 50%; animation: gear-rotate-reverse 14s linear infinite }
+
+  @keyframes gear-rotate{ from{ transform: rotate(0deg) } to{ transform: rotate(360deg) } }
+  @keyframes gear-rotate-reverse{ from{ transform: rotate(0deg) } to{ transform: rotate(-360deg) } }
+
+  /* Disable animation for users who prefer reduced motion (respect accessibility) */
+  @media (prefers-reduced-motion: reduce){
+    .hero-right-placeholder{ height:auto }
+    .hero-right-placeholder .card{ position:static; opacity:1; transform:none; animation:none; pointer-events:auto; width:100%; max-width:100% }
+    .hero-right-placeholder .hero-gears{ display:none }
+  }
+}
+
+/* Mobile adjustments (keep the same sequential animation, center cards) */
+@media (max-width: 880px){
+  .hero-right-placeholder{ height:28rem; }
+  /* Keep cards anchored to the right on small screens too, but reduce width so they don't overflow */
+  .hero-right-placeholder .card{ width: min(86%, 360px); left:auto; right:1rem; transform: translateY(-50%); }
+}
+
+/* Very small screens: tighten the stage so animation remains visually centered without pushing other content */
+@media (max-width: 420px){
+  .hero-right-placeholder{ height:26rem; }
+  .hero-right-placeholder .card{ width: min(88%, 340px); left:auto; right:0.75rem; transform: translateY(-50%); }
+}
+
+@media(max-width:880px){
+  /* keep default smaller stage centering applied above (width handled there) */
+  .md\:w-10\/12,.lg\:w-6\/12,.xl\:w-5\/12{width:100% !important;max-width:100% !important;margin-left:0 !important}
+}
+
+/* Enquiry form and side column full width on narrow devices */
+@media (max-width:992px){
+  .lg\:w-7\/12{width:100% !important}
+  .lg\:w-5\/12{width:100% !important}
+  .!bg\:#\f8f9fa, .!bg\[\#f8f9fa\] { width:100% }
+}
+
+/* Ensure testimonials and other cards are fluid */
+.testimonial-swiper .swiper-slide{width:92% !important;max-width:520px;margin:0 auto;height:auto}
+
+/* Offcanvas: don't force show/hide via unexpected inline overrides; rely on Bootstrap JS */
+.offcanvas{transform: translateX(100%);visibility: hidden;transition: transform .3s ease, visibility .01s linear .3s}
+.offcanvas.show{transform:none;visibility:visible;transition-delay:0s}
+
+/* Ensure footer stacks nicely */
+footer .widget ul { padding-left: 0.5rem; }
+
+/* Ensure city modal sits above other possible backdrops (offcanvas etc.) and is interactive */
+#city-modal.modal-overlay { z-index: 12000 !important; pointer-events: auto !important; }
+#city-modal .modal-card { z-index: 12100 !important; pointer-events: auto !important; }
+#city-modal .modal-backdrop { z-index: 11990 !important; pointer-events: auto !important; }
+
+/* Make city modal grid and buttons interactive and easy to tap */
+.modal-city-grid{ pointer-events: auto !important; }
+.modal-city-grid .city-btn, .modal-city-grid a.city-btn{ display:inline-flex; cursor:pointer; }
+
+/* HERO — ensure gradient fully covers the hero and remove side navigation buttons */
+#contact.wrapper.image-wrapper {
+  /* keep image as fallback but add a strong gradient so the section never has bare white gaps */
+  background-image: linear-gradient(135deg, rgba(245,167,198,0.95) 0%, rgba(255,210,174,0.95) 55%), url("./assets/img/photos/bg14.png");
+  background-size: cover !important;
+  background-position: center center !important;
+  /* increased hero height for a fuller appearance */
+  min-height: 60rem;
+}
+
+/* Remove the white divider triangle that sits under the navbar for a seamless hero */
+#contact > .overflow-hidden{ display:none !important; }
+
+/* hide left/right hero navigation buttons (decorative) inside the hero — cover all possible selectors */
+/* Some navigation controls are added by plugins and may exist in .swiper-controls or as .swiper-button-prev/next in various places. Force-hide inside the hero. */
+#contact .swiper-button-prev,
+#contact .swiper-button-next,
+#contact .swiper-navigation .swiper-button,
+#contact .swiper-controls .swiper-navigation .swiper-button,
+#contact .swiper-hero .swiper-button,
+#contact .swiper-button,
+#contact .swiper-controls .swiper-button-prev,
+#contact .swiper-controls .swiper-button-next { display: none !important; opacity: 0 !important; pointer-events: none !important; }
+
+/* Also hide any round-floating controls that might be direct children */
+#contact > .swiper-button-prev, #contact > .swiper-button-next { display:none !important }
+
+/* Larger hero on wide desktop screens, keeps proportion well for large monitors */
+@media (min-width:1400px) {
+  /* on very large screens make the hero take a large portion of the viewport */
+  #contact.wrapper.image-wrapper { min-height: 80vh; }
+}
+
+/* Slightly smaller hero on small screens so content fits without too much scrolling */
+@media (max-width:767px){
+  /* increase mobile height slightly so stacked content breathes */
+  #contact.wrapper.image-wrapper { min-height: 44rem; padding-top:3.5rem; padding-bottom:3.5rem }
+}
+
+/* ensure hero overlay layer doesn't leave gaps — keep overlay semi-transparent */
+#contact.wrapper.image-wrapper::before{ background: linear-gradient(90deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02)); }
+
+/* In case the navbar is sticky and overlapping, lift the hero up so its background extends beneath the nav */
+.hero-constrained{ padding-top: 1rem !important }
+
+/* HOW IT WORKS — index-specific responsive & visual polish */
+.how-it-works-cards{ flex-wrap:wrap; gap:1rem; align-items:stretch; justify-content:center }
+.how-it-works-cards .card{ width:calc(25% - 1rem); box-sizing:border-box; display:flex; flex-direction:column; padding:1.25rem }
+.how-it-works-cards .card .card-body{ display:flex; flex-direction:column; gap:0.6rem; align-items:center; text-align:center }
+.how-it-works-cards .card .svg-bg{ width:56px; height:56px; display:flex; align-items:center; justify-content:center; border-radius:8px }
+.arrow-icon{ display:flex; align-items:center; justify-content:center; width:56px; color:#605dba; font-size:1.6rem }
+
+/* Tablet: 3-up layout */
+@media (max-width:1100px){
+  .how-it-works-cards .card{ width:calc(33.333% - 1rem) }
+}
+
+/* Desktop: keep all steps (cards + arrows) in a single row */
+@media (min-width:1101px){
+  /* Desktop: force a 4-up card layout with equal gaps. Remove inline arrow items from the flow so they don't push a card to the next row */
+  .how-it-works-cards{ position:relative; flex-wrap:nowrap; justify-content:space-between; align-items:stretch; gap:2rem }
+
+  /* Treat only the 4 cards as the layout columns; each card gets equal width calculated from the container minus the gaps between them */
+  .how-it-works-cards .card{ flex:0 0 calc((100% - (3 * 2rem)) / 4); width:auto; box-sizing:border-box; min-width:200px }
+
+  /* Arrow icons are decorative. Keep them visible visually but remove them from layout so they don't affect spacing (positioned absolutely). This keeps perfect equal spacing for cards. */
+  .how-it-works-cards .arrow-icon{ display:block; position:absolute; pointer-events:none; opacity:0.9 }
+  /* position the first and second arrow visually — since HTML contains two arrow elements, place them centrally between pairs */
+  /* arrows live outside the normal flow — pick them by child position inside the parent so their placement is reliable */
+  .how-it-works-cards > .arrow-icon:nth-child(2){ left: calc(25% - 24px); top: 50%; transform: translateY(-50%); }
+  .how-it-works-cards > .arrow-icon:nth-child(5){ left: calc(75% - 24px); top: 50%; transform: translateY(-50%); }
+  .how-it-works-cards .arrow-icon i{ font-size:1.6rem }
+}
+
+/* Small devices: stack steps vertically, hide arrows and tighten spacing */
+@media (max-width:768px){
+  .how-it-works-cards{ flex-direction:column; gap:1.25rem }
+  .how-it-works-cards .card{ width:100%; padding:1rem }
+  .arrow-icon{ display:none }
+  .how-it-works-cards .card .svg-bg img{ width:1.5rem; height:1.5rem }
+  .how-it-works-cards .card h4{ font-size:1.05rem }
+  .how-it-works-cards .card p{ font-size:0.95rem }
+  .how-it-works-cards .card span{ font-size:1.65rem }
+}
+
+/* Extra small devices: slightly reduce text sizes for a comfortable fit */
+@media (max-width:420px){
+  .how-it-works-cards .card h4{ font-size:1rem }
+  .how-it-works-cards .card p{ font-size:0.9rem }
+  .how-it-works-cards .card span{ font-size:1.45rem }
+}
+

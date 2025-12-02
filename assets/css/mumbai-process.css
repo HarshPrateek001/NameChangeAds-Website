@@ -1,0 +1,10 @@
+/* assets/css/mumbai-process.css */
+
+.process-section .card {
+    transition: all 0.3s ease-in-out;
+}
+
+.process-section .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(30, 34, 40, 0.06);
+}

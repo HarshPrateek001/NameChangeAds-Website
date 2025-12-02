@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Professional name change services including affidavit drafting, newspaper advertisement, and Gazette notification.">
+  <meta name="keywords"
+    content="name change services, affidavit drafting, newspaper ad, gazette notification, name change reasons">
+  <meta name="author" content="Name Changed Ads">
+  <title>Services - Name Change Solutions | Name Changed Ads</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="./assets/fonts/unicons/unicons.css">
+  <link rel="stylesheet" href="./assets/css/plugins.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./assets/css/colors/grape.css">
+  <link rel="preload" href="./assets/css/fonts/space.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+
+  <style>
+    /* Page specific polish */
+
+    .services-hero-sub {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .service-card {
+      border-radius: 0.9rem;
+      border: 1px solid #e6e9ef;
+      background: #ffffff;
+      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+      padding: 1.8rem 1.6rem;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 320px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 22px 55px rgba(15, 23, 42, 0.12);
+    }
+
+    /* SERVICES GRID: First row 2 large cards, subsequent rows 3 per row on wide screens */
+    #compare .services-grid{
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 1.6rem;
+      align-items: stretch;
+      justify-content: center; /* center smaller rows */
+    }
+
+    #compare .services-grid .service-grid-item{ width:100%; max-width:100%; }
+
+    /* Make all service cards equal: two-per-row layout on wide screens */
+    #compare .services-grid .service-grid-item{ grid-column: span 6; }
+
+    /* Responsive fallbacks: become 2-per-row on medium screens, 1-per-row on small */
+    @media(max-width: 1199.98px){
+      #compare .services-grid{ display:flex; flex-wrap:wrap; justify-content:center; gap:1rem; }
+      #compare .services-grid .service-grid-item{ flex: 0 1 calc(50% - 1rem); max-width: calc(50% - 1rem); }
+    }
+
+    @media(max-width: 575.98px){
+      #compare .services-grid .service-grid-item{ flex: 0 1 100%; max-width:100%; }
+    }
+
+    .service-icon {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .service-pill {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.65rem;
+      border-radius: 999px;
+      background-color: #f2f2fc;
+      color: #4b4acb;
+      display: inline-block;
+      margin-bottom: 0.4rem;
+    }
+
+    .section-heading {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #343f52;
+      margin-bottom: 0.4rem;
+    }
+
+    .sub-heading {
+      font-size: 0.95rem;
+      color: #60697b;
+      margin-bottom: 1.5rem;
+    }
+
+    .bg-soft-grape {
+      background: linear-gradient(135deg, #f7f5ff, #f4f2ff);
+    }
+
+    .reason-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      background-color: #f3f4ff;
+      color: #4744c2;
+      margin: 0 0.4rem 0.4rem 0;
+    }
+
+    .reason-badge i {
+      font-size: 0.9rem;
+      margin-right: 0.3rem;
+    }
+
+    @media (max-width: 767.98px) {
+      .section-heading {
+        font-size: 1.4rem;
+      }
+    }
+
+    /* ---------- Newspaper sample card (visual polish) ---------- */
+    .newspaper-card {
+      border-radius: 1.25rem;
+      background: linear-gradient(180deg,#ffffff,#fbfbff);
+      border: 1px solid rgba(14,20,40,0.04);
+      box-shadow: 0 20px 50px rgba(13,18,42,0.06);
+      padding: 1.5rem;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr 360px; /* left = content, right = details/cta */
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+    .newspaper-card .card-head{ display:flex; align-items:center; gap:1rem; margin-bottom:1rem; grid-column: 1/-1 }
+    .newspaper-card .card-head .icon-shell{ width:56px; height:56px; border-radius:10px; display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg,#f0f4ff,#eef0ff); box-shadow: inset 0 4px 10px rgba(255,255,255,0.6) }
+    .newspaper-card .card-head h4{ margin:0; font-weight:800; color:#243246 }
+    .newspaper-card .card-head p{ margin:0; color:#60697b; font-size:0.95rem }
+
+    .sample-ad-box{ border-radius:10px; border:1px solid rgba(14,20,40,0.06); background:linear-gradient(180deg,#ffffff,#f6f8ff); padding:1rem; margin:0.6rem 0 1rem; color:#414b56; min-height:120px; display:flex; align-items:center }
+    .sample-ad-box .ad-line{ font-size:0.98rem; color:#0f172a; opacity:0.98; line-height:1.6; margin:0 }
+
+    /* newspaper layout columns */
+    .newspaper-card .sample-col{ padding-right:0.5rem }
+    .newspaper-card .details-col{ display:flex; flex-direction:column; justify-content:space-between }
+
+    .newspaper-card h5{ font-weight:700; color:#243246; margin-bottom:0.6rem }
+    .newspaper-card ul{ padding-left:1.2rem; color:#6b7480 }
+    .newspaper-card ul li{ margin-bottom:0.55rem }
+
+    .btn-get-quote{ display:inline-flex; align-items:center; gap:0.6rem; padding:0.9rem 1rem; border-radius:10px; font-weight:800; background:linear-gradient(90deg,#4f46e5,#7c3aed); border:0; color:#fff; box-shadow:0 18px 48px rgba(79,70,229,0.18); transition: all .18s ease; width:100%; justify-content:center }
+    .btn-get-quote:hover{ transform:translateY(-6px); filter:saturate(1.05); box-shadow:0 28px 70px rgba(79,70,229,0.22) }
+
+    /* responsive tweak for newspaper card inner layout */
+    @media(max-width:991.98px){ 
+      .newspaper-card{ padding:1rem; grid-template-columns: 1fr; }
+      .newspaper-card .sample-col{ padding-right:0 }
+    }
+
+    /* ---------- Affidavit panel polish --------- */
+    .affidavit-panel {
+      border-radius: 1.25rem;
+      padding: 1.75rem 1.6rem;
+      background: linear-gradient(180deg, rgba(247,245,255,0.95), rgba(244,242,255,0.93));
+      border: 1px solid rgba(96,93,186,0.06);
+      box-shadow: 0 22px 48px rgba(96,93,186,0.06);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .affidavit-panel::before{
+      content: '';
+      position: absolute;
+      left: -46px; top: -28px;
+      width: 220px; height: 220px;
+      background: radial-gradient(circle at 20% 25%, rgba(126,108,242,0.10), rgba(96,93,186,0.02));
+      transform: rotate(10deg);
+      pointer-events: none;
+      opacity: 0.9;
+    }
+
+    .affidavit-head { position: relative; z-index: 2 }
+    .affidavit-head .badge-small{ display:inline-block; background: rgba(96,93,186,0.08); color:var(--brand-1); font-weight:700; padding:0.24rem 0.6rem; border-radius:999px; font-size:0.78rem; margin-bottom:0.5rem }
+
+    .affidavit-panel h4 { font-size:1.05rem; margin-bottom:0.5rem }
+    .affidavit-panel p { color: #5b6773; font-size:0.95rem; margin-bottom:0.9rem }
+
+    .affidavit-panel ul { list-style: none; padding:0; margin:0 }
+    .affidavit-panel ul li{ display:flex; gap:0.75rem; align-items:flex-start; color:#586471; font-size:0.95rem; margin-bottom:0.6rem }
+
+    .affidavit-panel ul li .dot { width:9px; height:9px; border-radius:999px; display:inline-block; margin-top:6px; flex:0 0 auto; background: linear-gradient(135deg,#605dba,#7c3aed);} 
+
+    .affidavit-footer{ text-align:left; z-index:2 }
+    .affidavit-panel .btn-grape{ padding:0.52rem 0.9rem; font-weight:700 }
+
+    /* START WITH AFFIDAVIT: highly visible CTA */
+    .btn-start-affidavit {
+      display:inline-flex; align-items:center; gap:0.6rem;
+      padding:0.62rem 1.05rem; border-radius:999px; font-weight:800; font-size:0.98rem;
+      background: linear-gradient(90deg,#5f58d8,#7c3aed); color: #fff; border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 14px 35px rgba(124,58,237,0.18), inset 0 -2px 6px rgba(255,255,255,0.06);
+      transition: transform .18s cubic-bezier(.2,.9,.2,1), box-shadow .18s ease, filter .18s ease;
+    }
+
+    .btn-start-affidavit svg{ transform: translateX(0); transition: transform .18s ease }
+    .btn-start-affidavit:hover{ transform: translateY(-4px); box-shadow: 0 26px 60px rgba(96,93,186,0.18); filter: saturate(1.05) }
+    .btn-start-affidavit:hover svg{ transform: translateX(4px) }
+
+    .btn-start-affidavit:focus{ outline: none; box-shadow: 0 0 0 4px rgba(124,58,237,0.16) }
+
+    @media (max-width: 767.98px){
+      .btn-start-affidavit{ display:block; width:100%; justify-content:center }
+    }
+
+    @media(max-width: 991.98px){
+      .affidavit-panel{ padding:1.2rem }
+      .affidavit-panel::before{ left:-80px; top:-60px; width:260px; height:260px; opacity:0.65 }
+    }
+
+    /* ------- Gazette / Typical Document Set: horizontal flow ------- */
+    /* polished, clean Gazette card (no watercolor) */
+    .gazette-card { position: relative; overflow: visible; background: #fff; border-radius: 1.25rem; border: 1px solid rgba(14,20,40,0.04); box-shadow: 0 24px 52px rgba(15,23,42,0.06); padding: 1.25rem; }
+    .gazette-card::after{ content:''; position:absolute; right:1.25rem; top:1.25rem; width:56px; height:56px; border-radius:12px; background: linear-gradient(135deg,var(--brand-1),var(--brand-2)); opacity:0.06; pointer-events:none }
+    .doc-grid-horizontal { display:flex; gap:1rem; align-items:stretch; overflow-x:auto; padding:0.6rem 0.2rem; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch }
+    .doc-grid-horizontal::-webkit-scrollbar{ height:10px }
+    .doc-grid-horizontal::-webkit-scrollbar-thumb{ background: linear-gradient(90deg,var(--brand-1),var(--brand-2)); border-radius:999px }
+
+    .doc-card { flex:0 0 220px; scroll-snap-align:center; display:flex; flex-direction:column; gap:0.6rem; padding:1.05rem; min-height:120px; border-radius:14px; background:linear-gradient(180deg,#ffffff,#fbfbff); border:1px solid rgba(14,20,40,0.04); box-shadow:0 10px 30px rgba(13,18,42,0.06); transition: transform .26s cubic-bezier(.2,.9,.2,1), box-shadow .26s ease, opacity .26s ease; opacity:0; transform:translateY(12px); }
+    .doc-card.in-view{ opacity:1; transform:translateY(0) }
+    .doc-card .doc-icon{ width:48px; height:48px; border-radius:999px; display:inline-flex; align-items:center; justify-content:center; box-shadow:0 8px 28px rgba(96,93,186,0.08); font-weight:700 }
+    .doc-card h6, .doc-card h5, .doc-card .title { font-weight:700; margin:0; color:#243246; font-size:0.95rem }
+    .doc-card p, .doc-card .muted { margin:0; color:#6b7480; font-size:0.85rem }
+    .doc-card:hover{ transform: translateY(-8px); box-shadow: 0 30px 80px rgba(13,18,42,0.12) }
+
+    /* Processing timeline visual rewrite */
+    .processing-timeline{ border-radius:12px; padding:1rem; display:flex; flex-direction:column; gap:0.7rem; background:linear-gradient(180deg,#ffffff,#fbfbff); border:1px solid rgba(14,20,40,0.03); box-shadow: 0 8px 24px rgba(13,18,42,0.04) }
+    .processing-timeline .timeline-steps{ display:flex; gap:0.8rem; align-items:center }
+    .processing-timeline .timeline-step{ display:flex; flex-direction:column; align-items:center; gap:0.45rem; flex:1; text-align:center; opacity:0; transform: translateY(8px); transition: all .28s cubic-bezier(.2,.9,.2,1) }
+    .processing-timeline .timeline-step.in-view{ opacity:1; transform: translateY(0) }
+    .processing-timeline .step-dot{ width:44px; height:44px; display:flex; align-items:center; justify-content:center; border-radius:999px; background:linear-gradient(180deg,#fff,#f5f6ff); box-shadow: 0 8px 24px rgba(96,93,186,0.06); font-weight:800 }
+    .processing-timeline .step-title{ color:#5b6773; font-size:0.85rem }
+
+    /* CTA buttons inside gazette card */
+    .btn-gazette-quote{ background: linear-gradient(90deg,var(--brand-1),var(--brand-2)); color:#fff; padding:0.76rem 1.05rem; border-radius:999px; font-weight:800; display:inline-flex; align-items:center; gap:0.6rem; transition: transform .18s ease, box-shadow .18s ease }
+    .btn-gazette-quote:hover{ transform: translateY(-6px); box-shadow: 0 30px 72px rgba(79,70,229,0.18); filter: saturate(1.05) }
+    .btn-gazette-quote:focus{ outline: none; box-shadow: 0 0 0 6px rgba(77,63,241,0.12) }
+
+    .btn-outline.gazette{ border:1px solid rgba(96,93,186,0.12); color:var(--brand-1); padding:0.6rem 0.9rem; background:transparent; transition: all .16s ease }
+    .btn-outline.gazette:hover{ background:linear-gradient(180deg, rgba(96,93,186,0.06), rgba(124,58,237,0.03)); transform:translateY(-4px) }
+
+    /* CTA sheen and more polished timeline colors */
+    .btn-gazette-quote{ position:relative; overflow:hidden }
+    .btn-gazette-quote::after{ content:''; position:absolute; left:-60%; top:-10%; width:40%; height:130%; transform: skewX(-18deg) translateX(0); background: linear-gradient(90deg, rgba(255,255,255,0.45), rgba(255,255,255,0.08)); transition: transform 0.8s cubic-bezier(.2,.9,.2,1); opacity:0.9 }
+    .btn-gazette-quote:hover::after{ transform: translateX(300%) skewX(-18deg); opacity:1 }
+
+    .processing-timeline .timeline-step.in-view .step-dot{ box-shadow: 0 12px 36px rgba(96,93,186,0.14) }
+    .processing-timeline .timeline-step:nth-child(1).in-view .step-dot{ background: linear-gradient(180deg,#ffffff,#eef2ff); color:var(--brand-1) }
+    .processing-timeline .timeline-step:nth-child(2).in-view .step-dot{ background: linear-gradient(180deg,#fff7ec,#fff4e8); color:#c28d11 }
+    .processing-timeline .timeline-step:nth-child(3).in-view .step-dot{ background: linear-gradient(180deg,#ffffff,#eafaf6); color:#2d9f86 }
+    .processing-timeline .timeline-step:nth-child(4).in-view .step-dot{ background: linear-gradient(180deg,#fff7f7,#fff2f2); color:#c96310 }
+
+    @media(min-width: 992px){ .doc-grid-horizontal{ justify-content:flex-start } .doc-card{ flex-basis:240px } }
+    @media(max-width:767.98px){ .doc-grid-horizontal{ gap:0.8rem; padding:0.5rem } .doc-card{ flex-basis:200px } }
+  </style>
+</head>
+
+<body>
+  <div class="grow shrink-0">
+    <!-- HEADER / NAVBAR -->
+    <header>
+      <nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-light caret-none">
+        <div class="container xl:!flex-row lg:!flex-row !flex-nowrap items-center">
+          <div class="navbar-brand w-full">
+              <a href="./index.html">
+              <img src="./assets/img/namechangeadssmalllogo.png" style="max-height: 40px;" alt="Name Changed Ads">
+            </a>      
+          </div>
+          <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+            <div class="offcanvas-header xl:!hidden lg:!hidden flex items-center justify-between flex-row p-6">
+              <h3 class="!text-white xl:!text-[1.5rem] !text-[calc(1.275rem_+_0.3vw)] !mb-0">Name Changed Ads</h3>
+              <button type="button"
+                class="btn-close btn-close-white !mr-[-0.75rem] m-0 p-0 leading-none !text-[#343f52] transition-all duration-[0.2s] ease-in-out border-0 motion-reduce:transition-none before:text-[1.05rem] before:text-white before:content-['\ed3b'] before:w-[1.8rem] before:h-[1.8rem] before:leading-[1.8rem] before:shadow-none before:transition-[background] before:duration-[0.2s] before:ease-in-out before:!flex before:justify-center before:items-center before:m-0 before:p-0 before:rounded-[100%] hover:no-underline bg-inherit before:bg-[rgba(255,255,255,0.8)] before:font-Unicons hover:before:bg-[rgba(0,0,0,0.11)]"
+                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body xl:!ml-auto lg:!ml-auto flex flex-col !h-full">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]"
+                    href="./index.html">Home</a>
+                </li>
+
+                <!-- Services Dropdown with anchors to this page -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem] active"
+                    href="./services.html" data-bs-toggle="dropdown">Services</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./services.html#affidavit">Affidavit Drafting</a></li>
+                    <li><a class="dropdown-item" href="./services.html#newspaper">Newspaper Advertisement</a></li>
+                    <li><a class="dropdown-item" href="./services.html#gazette">Gazette Notification</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="./services.html#reasons">All Name Change Reasons</a></li>
+                  </ul>
+                </li>
+                <!-- End Services -->
+
+                <li class="nav-item">
+                  <a class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]"
+                    href="./index.html#process">How It Works</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]"
+                    href="./about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]"
+                    href="./contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]"
+                    href="./mumbai.html">Mumbai</a>
+                </li>
+              </ul>
+              <!-- /.navbar-nav -->
+              <div class="offcanvas-footer xl:!hidden lg:!hidden">
+                <div>
+                  <a href="mailto:info@riyoadvertising.com" class="link-inverse">info@riyoadvertising.com</a>
+                  <br> +91 9326098181 <br>
+                  <nav class="nav social social-white !mt-4">
+                    <a class="!text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                      href="#"><i class="uil uil-twitter before:content-['\ed59'] !text-white text-[1rem]"></i></a>
+                    <a class="!text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                      href="#"><i class="uil uil-facebook-f before:content-['\eae2'] !text-white text-[1rem]"></i></a>
+                    <a class="!text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                      href="#"><i class="uil uil-dribbble before:content-['\eaa2'] !text-white text-[1rem]"></i></a>
+                    <a class="!text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                      href="#"><i class="uil uil-instagram before:content-['\eb9c'] !text-white text-[1rem]"></i></a>
+                    <a class="!text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                      href="#"><i class="uil uil-youtube before:content-['\edb5'] !text-white text-[1rem]"></i></a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="navbar-other w-full !flex !ml-auto">
+            <ul class="navbar-nav !flex-row !items-center !ml-auto">
+              <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-info"><i
+                    class="uil uil-info-circle !text-[1.1rem] hover:!text-[#605dba]"></i></a></li>
+              <li class="nav-item xl:!hidden lg:!hidden"><button class="hamburger offcanvas-nav-btn"><span></span></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Side info offcanvas -->
+      <div class="offcanvas offcanvas-end text-inverse !text-[#cacaca] opacity-100" id="offcanvas-info"
+        data-bs-scroll="true">
+        <div class="offcanvas-header flex flex-row items-center justify-between p-[1.5rem]">
+          <h3 class="!text-white xl:!text-[1.5rem] !mb-0">Name Changed Ads</h3>
+          <button type="button" class="btn-close btn-close-white !mr-[-0.5rem] m-0 p-0" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body !pb-[1.5rem]">
+          <div class="widget !mb-8">
+            <p>Complete name change solution — affidavit, newspaper ad and Gazette notification under one roof.</p>
+          </div>
+          <div class="widget !mb-8">
+            <h4 class="widget-title !text-white">Contact</h4>
+            <p>+91 9326098181<br>info@riyoadvertising.com</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section
+      class="wrapper image-wrapper bg-full bg-image bg-overlay bg-overlay-light-600 [background-size:100%] bg-[center_center] bg-no-repeat bg-scroll relative z-0 before:content-[''] before:block before:absolute before:z-[1] before:w-full before:h-full before:left-0 before:top-0 before:bg-[rgba(255,255,255,0.6)]"
+      data-image-src="./assets/img/photos/bg14.png">
+      <div class="container pt-28 pb-16">
+        <div class="flex flex-wrap mx-0 !mt-[-50px] items-center text-center">
+          <div class="xl:w-9/12 lg:w-10/12 md:w-11/12 w-full flex-[0_0_auto] max-w-full !mx-auto !relative !mt-[50px]"
+            data-cues="slideInDown" data-group="page-title">
+            <h1 class="xl:!text-[2.6rem] !text-[calc(1.4rem_+_1.5vw)] font-semibold !leading-[1.12] !mb-4">
+              Name Change Services – End-to-End Legal Support
+            </h1>
+            <p class="lead services-hero-sub !text-[1.05rem] !leading-[1.6] !font-normal !mb-5">
+              We handle every step of your name change: from drafting a legally valid affidavit to publishing newspaper
+              ads and filing your Gazette notification. One team, one process, zero confusion.
+            </p>
+            <a href="#compare"
+              class="btn btn-lg btn-grape text-white !px-8 !py-3 rounded-full shadow-md inline-flex items-center justify-center gap-2">
+              View All Services
+              <i class="uil uil-arrow-down"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="overflow-hidden" style="z-index:1;">
+        <div class="divider !text-[#fefefe] mx-[-0.5rem]">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
+            <g fill="currentColor">
+              <polygon points="1440 100 0 100 0 85 1440 0 1440 100" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE SERVICES GRID -->
+    <section class="wrapper bg-light" id="compare">
+      <div class="container py-14 py-md-16">
+        <div class="row mb-10">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Our Core Name Change Services</h2>
+            <p class="sub-heading">
+              Har ek step legally important hai. Hum aapke documents ko sahi format mein banakar, time par submit karke
+              aapka pura process smooth banate hain.
+            </p>
+          </div>
+        </div>
+        <div class="row gy-6 gx-lg-6 gx-xl-8 services-grid">
+          <!-- Affidavit -->
+          <div class="col-md-6 col-xl-3 service-grid-item">
+            <article class="service-card text-start" id="card-affidavit">
+              <span class="service-pill">Step 1</span>
+              <div class="service-icon bg-[#e0e9fa] text-[#3f78e0]">
+                <i class="uil uil-file-check"></i>
+              </div>
+              <h3 class="h5 mb-1">Affidavit Drafting</h3>
+              <p class="text-[#60697b] text-sm mb-3">
+                Legally valid name change affidavit, drafted by professionals as per state guidelines.
+              </p>
+              <ul class="text-sm text-[#60697b] mb-3">
+                <li>✔ Correct legal format</li>
+                <li>✔ Clear mention of old & new name</li>
+                <li>✔ Notary or Magistrate attestation guidance</li>
+              </ul>
+              <a href="#affidavit" class="more hover">Learn more</a>
+            </article>
+          </div>
+          <!-- Newspaper -->
+          <div class="col-md-6 col-xl-3 service-grid-item">
+            <article class="service-card text-start" id="card-newspaper">
+              <span class="service-pill">Step 2</span>
+              <div class="service-icon bg-[#e1f6f0] text-[#45c4a0]">
+                <i class="uil uil-newspaper"></i>
+              </div>
+              <h3 class="h5 mb-1">Newspaper Advertisement</h3>
+              <p class="text-[#60697b] text-sm mb-3">
+                Name change advertisement in English & regional newspapers as per rules.
+              </p>
+              <ul class="text-sm text-[#60697b] mb-3">
+                <li>✔ Drafting proper ad matter</li>
+                <li>✔ Selecting approved newspapers</li>
+                <li>✔ Getting original ad copies</li>
+              </ul>
+              <a href="#newspaper" class="more hover">Learn more</a>
+            </article>
+          </div>
+          <!-- Gazette -->
+          <div class="col-md-6 col-xl-3 service-grid-item">
+            <article class="service-card text-start" id="card-gazette">
+              <span class="service-pill">Step 3</span>
+              <div class="service-icon bg-[#fef3e4] text-[#fab758]">
+                <i class="uil uil-bill"></i>
+              </div>
+              <h3 class="h5 mb-1">Gazette Notification</h3>
+              <p class="text-[#60697b] text-sm mb-3">
+                Filing your application with Government Press for official Gazette publication.
+              </p>
+              <ul class="text-sm text-[#60697b] mb-3">
+                <li>✔ Checking documents & forms</li>
+                <li>✔ Submitting application</li>
+                <li>✔ Tracking publication</li>
+              </ul>
+              <a href="#gazette" class="more hover">Learn more</a>
+            </article>
+          </div>
+          <!-- Reasons -->
+          <div class="col-md-6 col-xl-3 service-grid-item">
+            <article class="service-card text-start" id="card-reasons">
+              <span class="service-pill">All Cases</span>
+              <div class="service-icon bg-[#f8e7ec] text-[#e2626b]">
+                <i class="uil uil-users-alt"></i>
+              </div>
+              <h3 class="h5 mb-1">All Name Change Reasons</h3>
+              <p class="text-[#60697b] text-sm mb-3">
+                From marriage to adoption – we handle almost every genuine name change reason legally.
+              </p>
+              <ul class="text-sm text-[#60697b] mb-3">
+                <li>✔ Marriage / Divorce</li>
+                <li>✔ Spelling / Astrology</li>
+                <li>✔ Minor child / Adoption</li>
+              </ul>
+              <a href="#reasons" class="more hover">Explore all reasons</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AFFIDAVIT SECTION -->
+    <section class="wrapper bg-white" id="affidavit">
+      <div class="container py-14 py-md-16">
+        <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <h2 class="section-heading">Affidavit Drafting for Name Change</h2>
+            <p class="sub-heading">
+              Affidavit aapke name change process ka base document hai. Agar yahi galat hua to aage sab jagah problem
+              aa sakti hai.
+            </p>
+            <p class="mb-3 text-[#60697b]">
+              Hum aapka affidavit state rules ke hisaab se draft karte hain, jisme aapka <strong>old name,
+                new name, address, reason</strong> aur declaration clearly likha hota hai. Ye affidavit notary ya
+              magistrate ke saamne sign karaya jata hai.
+            </p>
+            <ul class="icon-list bullet-bg bullet-soft-primary mb-3 text-[#60697b]">
+              <li><i class="uil uil-check"></i><span>Stamp paper value & wording as per state requirement.</span></li>
+              <li><i class="uil uil-check"></i><span>Correct format for adults, minors, married persons, etc.</span></li>
+              <li><i class="uil uil-check"></i><span>Sample affidavit shared in advance for your review.</span></li>
+            </ul>
+            <p class="text-[#60697b] mb-0">
+              Affidavit sahi hone se aapka newspaper ad aur Gazette form easily accept ho jata hai. Galat format ka
+              affidavit kai baar reject bhi ho jata hai.
+            </p>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="affidavit-panel rounded-[1.25rem] bg-soft-grape p-6 shadow-md">
+              <div class="affidavit-head">
+                <span class="badge-small">Affidavit</span>
+                <h4 class="mb-3 text-[#243246] font-bold">What we need from you</h4>
+                <p class="text-[#5b6773] text-sm mb-3">Share the following so we can prepare your affidavit exactly as required by government rules.</p>
+              </div>
+
+              <ul class="text-sm text-[#60697b] space-y-2 mb-4">
+                <li><span class="dot" aria-hidden="true"></span><span>Current full name & proposed new name</span></li>
+                <li><span class="dot" aria-hidden="true"></span><span>Date of birth & full postal address</span></li>
+                <li><span class="dot" aria-hidden="true"></span><span>Reason for name change</span></li>
+                <li><span class="dot" aria-hidden="true"></span><span>Copy of any one ID proof</span></li>
+              </ul>
+
+              <h5 class="mb-2 text-[#243246] font-bold">What you get</h5>
+              <ul class="text-sm text-[#60697b] space-y-2 mb-4">
+                <li><span class="dot" aria-hidden="true"></span><span>Professionally drafted affidavit text</span></li>
+                <li><span class="dot" aria-hidden="true"></span><span>Guidance for e-stamp / stamp paper purchase</span></li>
+                <li><span class="dot" aria-hidden="true"></span><span>Instructions for signing in front of notary</span></li>
+              </ul>
+
+              <div class="affidavit-footer mt-4">
+                <a href="./contact.html" class="btn btn-sm btn-grape text-white rounded-full inline-flex items-center gap-2 btn-start-affidavit" aria-label="Start with Affidavit">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 12h14" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/><path d="M12 5l7 7-7 7" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/></svg>
+                  Start with Affidavit
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSPAPER SECTION -->
+    <section class="wrapper bg-light" id="newspaper">
+      <div class="container py-14 py-md-16">
+        <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+          <div class="col-lg-6">
+            <h2 class="section-heading">Newspaper Advertisement for Name Change</h2>
+            <p class="sub-heading">
+              Kai states me naam badalne ke liye 1 English + 1 regional language newspaper me ad dena zaroori hota hai.
+            </p>
+            <p class="mb-3 text-[#60697b]">
+              Hum aapka ad matter bilkul sahi legal format mein banate hain jisme aapka old name, new name, address,
+              date of affidavit, aur relevant details mention hoti hain. Fir hum suitable newspaper select karke
+              aapka ad publish karwate hain.
+            </p>
+            <ul class="icon-list bullet-bg bullet-soft-primary mb-3 text-[#60697b]">
+              <li><i class="uil uil-check"></i><span>English + regional (Marathi, Hindi, etc.) newspaper options.</span>
+              </li>
+              <li><i class="uil uil-check"></i><span>Weekend editions / higher visibility placement suggestions.</span>
+              </li>
+              <li><i class="uil uil-check"></i><span>Original newspaper copies or e-paper proof for Gazette use.</span>
+              </li>
+            </ul>
+            <p class="mb-0 text-[#60697b]">
+              Galat format ya incomplete ad kabhi-kabhi department accept nahi karta. Isi liye hum ready-made legally
+              acceptable format use karte hain.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div class="newspaper-card">
+              <div class="card-head">
+                <div class="icon-shell" aria-hidden="true">
+                  <!-- small newspaper SVG -->
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="3" width="20" height="18" rx="2" fill="#eef2ff"/><rect x="6" y="7" width="8" height="2" rx="0.6" fill="#605dba"/><rect x="6" y="11" width="12" height="1.4" rx="0.5" fill="#98a0d8"/><rect x="6" y="14.4" width="6" height="1.1" rx="0.5" fill="#98a0d8"/></svg>
+                </div>
+                <div>
+                  <h4 class="mb-0">Sample Ad Format</h4>
+                  <p class="!mb-0 text-sm text-[#5f6876]">Legal ad copy template commonly used for Gazette submissions.</p>
+                </div>
+              </div>
+
+              <div class="sample-col">
+                <div class="sample-ad-box">
+                  <p class="ad-line">I, &lt;Old Name&gt;, residing at &lt;Address&gt;, have changed my name to &lt;New Name&gt; vide affidavit dated &lt;Date&gt;. Hereafter, I shall be known as &lt;New Name&gt; for all purposes.</p>
+                </div>
+              </div>
+
+              <div class="details-col">
+                <div>
+                  <h5>Supported Publications</h5>
+                  <ul class="text-sm mb-4">
+                    <li>• Leading English dailies (city / state specific)</li>
+                    <li>• State language newspapers (e.g., Marathi in Maharashtra)</li>
+                    <li>• E-paper edition where acceptable</li>
+                  </ul>
+                </div>
+                <div>
+                  <a href="./contact.html#enquiry" class="btn-get-quote" aria-label="Get newspaper quote">Get Newspaper Quote</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GAZETTE SECTION -->
+    <section class="wrapper bg-white" id="gazette">
+      <div class="container py-14 py-md-16">
+        <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <h2 class="section-heading">Gazette Notification – Legal Proof of Name Change</h2>
+            <p class="sub-heading">
+              Gazette me aapka naam publish hona sabse strong legal proof hota hai. Banks, passport office, aur
+              government departments isko officially accept karte hain.
+            </p>
+            <p class="mb-3 text-[#60697b]">
+              Hum aapke state ke rules ke hisaab se forms fill karte hain, sahi documents attach karte hain, fees check
+              karte hain aur application submit karne mein help karte hain. Kuch cases me courier / offline submission
+              bhi hota hai jisme bhi guidance di jati hai.
+            </p>
+            <ul class="icon-list bullet-bg bullet-soft-primary mb-3 text-[#60697b]">
+              <li><i class="uil uil-check"></i><span>Form filling & document checklist.</span></li>
+              <li><i class="uil uil-check"></i><span>Correct photo, affidavit, newspaper ad attachment.</span></li>
+              <li><i class="uil uil-check"></i><span>Follow-up on expected publication date.</span></li>
+            </ul>
+            <p class="mb-0 text-[#60697b]">
+              Gazette publish hone ke baad aap future me apne sabhi records – Aadhaar, PAN, passport, bank, education
+              certificates – me naam update kar sakte hain.
+            </p>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="gazette-card rounded-[1.25rem] p-6 shadow-md bg-gradient-to-br from-white via-[#fbfbff] to-[#f6f7ff] border border-[rgba(79,70,229,0.06)]">
+              <div class="gazette-head mb-4 flex items-start gap-4">
+                <div class="gazette-icon bg-[#eef2ff] p-3 rounded-lg inline-flex items-center justify-center shadow-sm" aria-hidden="true">
+                  <!-- stylized legal document svg -->
+                  <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="14" height="18" rx="1.5" fill="#eef2ff"/><path d="M8 7h6M8 11h6M8 15h4" stroke="#605dba" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="flex-1">
+                  <h4 class="mb-1 text-[#243246] font-bold">Typical Document Set</h4>
+                  <p class="text-sm text-[#5b6773] mb-0">Everything needed to file a Gazette notification — prepared, checked and submitted by our experts.</p>
+                </div>
+              </div>
+
+              <div class="doc-grid mb-4">
+                <div class="doc-grid-horizontal" role="list" aria-label="Typical document set">
+                <div class="doc-card p-4 rounded-lg bg-white border border-[rgba(14,20,40,0.03)] text-center shadow-sm" role="listitem">
+                  <div class="doc-icon mx-auto w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-br from-[#fff] to-[#eef2ff] text-[#605dba] mb-3 shadow-sm">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 7h12M4 11h12M4 15h8" stroke="#605dba" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                  <div class="text-sm font-semibold text-[#243246]">Filled Gazette Form</div>
+                  <div class="text-xs text-[#6b7480] mt-1">Correct fields & government format</div>
+                </div>
+
+                <div class="doc-card p-4 rounded-lg bg-white border border-[rgba(14,20,40,0.03)] text-center shadow-sm" role="listitem">
+                  <div class="doc-icon mx-auto w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-br from-[#fff] to-[#fef7ee] text-[#c28d11] mb-3 shadow-sm">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2v20" stroke="#c28d11" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 6h12" stroke="#c28d11" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                  <div class="text-sm font-semibold text-[#243246]">Affidavit Copy</div>
+                  <div class="text-xs text-[#6b7480] mt-1">Original / digitally signed</div>
+                </div>
+
+                <div class="doc-card p-4 rounded-lg bg-white border border-[rgba(14,20,40,0.03)] text-center shadow-sm" role="listitem">
+                  <div class="doc-icon mx-auto w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-br from-[#fff] to-[#eafaf6] text-[#2d9f86] mb-3 shadow-sm">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="1" stroke="#2d9f86" stroke-width="1.2"/><path d="M7 8h10M7 12h6" stroke="#2d9f86" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                  <div class="text-sm font-semibold text-[#243246]">Newspaper Ad Copies</div>
+                  <div class="text-xs text-[#6b7480] mt-1">English & regional (e-paper ok)</div>
+                </div>
+
+                <div class="doc-card p-4 rounded-lg bg-white border border-[rgba(14,20,40,0.03)] text-center shadow-sm" role="listitem">
+                  <div class="doc-icon mx-auto w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-br from-[#fff] to-[#f6f8ff] text-[#374151] mb-3 shadow-sm">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2a4 4 0 014 4v6a4 4 0 01-8 0V6a4 4 0 014-4z" stroke="#374151" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                  </div>
+                  <div class="text-sm font-semibold text-[#243246]">ID & Photos</div>
+                  <div class="text-xs text-[#6b7480] mt-1">Passport / Aadhaar & recent photos</div>
+                </div>
+
+                <div class="doc-card p-4 rounded-lg bg-white border border-[rgba(14,20,40,0.03)] text-center shadow-sm" role="listitem">
+                  <div class="doc-icon mx-auto w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-br from-[#fff] to-[#fff6f6] text-[#e45a5a] mb-3 shadow-sm">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 6h16" stroke="#e45a5a" stroke-width="1.2" stroke-linecap="round"/><path d="M4 12h10" stroke="#e45a5a" stroke-width="1.2" stroke-linecap="round"/><path d="M4 18h7" stroke="#e45a5a" stroke-width="1.2" stroke-linecap="round"/></svg>
+                  </div>
+                  <div class="text-sm font-semibold text-[#243246]">Fee / Challan</div>
+                  <div class="text-xs text-[#6b7480] mt-1">Department-specific payments</div>
+                </div>
+              </div>
+
+              <div class="processing-timeline bg-white border border-[rgba(14,20,40,0.03)] p-4 rounded-lg shadow-sm mb-4">
+                <div class="flex items-center justify-between mb-3">
+                  <h5 class="mb-0 text-[#243246] font-bold">Processing Time</h5>
+                  <div class="text-sm text-[#6b7480]">Avg. <strong>3–5 weeks</strong></div>
+                </div>
+
+                <div class="timeline-steps flex items-center gap-3 md:gap-4">
+                  <div class="timeline-step text-center flex-1">
+                    <div class="step-dot mx-auto w-9 h-9 rounded-full flex items-center justify-center bg-[#eef2ff] text-[#605dba] font-bold">1</div>
+                    <div class="step-title text-xs text-[#5b6773] mt-2">Form & Docs</div>
+                  </div>
+                  <div class="timeline-step text-center flex-1">
+                    <div class="step-dot mx-auto w-9 h-9 rounded-full flex items-center justify-center bg-[#fff7ec] text-[#c28d11] font-bold">2</div>
+                    <div class="step-title text-xs text-[#5b6773] mt-2">Newspaper Publish</div>
+                  </div>
+                  <div class="timeline-step text-center flex-1">
+                    <div class="step-dot mx-auto w-9 h-9 rounded-full flex items-center justify-center bg-[#eafaf6] text-[#2d9f86] font-bold">3</div>
+                    <div class="step-title text-xs text-[#5b6773] mt-2">Submission</div>
+                  </div>
+                  <div class="timeline-step text-center flex-1">
+                    <div class="step-dot mx-auto w-9 h-9 rounded-full flex items-center justify-center bg-[#fef3e4] text-[#c96310] font-bold">4</div>
+                    <div class="step-title text-xs text-[#5b6773] mt-2">Gazette Publish</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="gazette-cta flex flex-col sm:flex-row gap-3 items-stretch">
+                <a href="./contact.html#enquiry" class="btn btn-lg btn-gazette-quote text-white rounded-full inline-flex items-center justify-center gap-2" aria-label="Get Gazette quote">
+                  Get Gazette Quote
+                  <i class="uil uil-arrow-right"></i>
+                </a>
+                <a href="./mumbai.html#map" class="btn btn-sm btn-outline gazette text-[#605dba] border-[#e6e9ef] rounded-full inline-flex items-center justify-center gap-2" aria-label="View Mumbai Gazette location">View Mumbai Gazette Location</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REASONS SECTION -->
+    <section class="wrapper bg-light" id="reasons">
+      <div class="container py-14 py-md-16">
+        <div class="row mb-8">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Name Change Reasons We Support</h2>
+            <p class="sub-heading">
+              Har reason ka process thoda different hota hai. Hum aapka category identify karke uske hisaab se
+              documents aur wording decide karte hain.
+            </p>
+          </div>
+        </div>
+
+        <div class="row gx-lg-8 gy-6">
+          <div class="col-lg-6">
+            <div class="bg-white rounded-[1.1rem] border border-[#e6e9ef] p-6 shadow-sm h-full">
+              <h4 class="mb-3 text-[#343f52] font-semibold">Common Reasons</h4>
+              <div class="mb-3">
+                <span class="reason-badge"><i class="uil uil-heart"></i>After Marriage</span>
+                <span class="reason-badge"><i class="uil uil-ban"></i>After Divorce / Separation</span>
+                <span class="reason-badge"><i class="uil uil-pen"></i>Spelling Correction</span>
+                <span class="reason-badge"><i class="uil uil-magic-wand"></i>Astrology / Numerology</span>
+              </div>
+              <ul class="text-sm text-[#60697b] space-y-1 mb-0">
+                <li>• Marriage surname change or adding spouse name.</li>
+                <li>• Removing married surname after divorce / separation.</li>
+                <li>• Correcting spelling mistakes in first / middle / last name.</li>
+                <li>• Changing name based on numerology or religious reasons.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="bg-white rounded-[1.1rem] border border-[#e6e9ef] p-6 shadow-sm h-full">
+              <h4 class="mb-3 text-[#343f52] font-semibold">Special Cases</h4>
+              <div class="mb-3">
+                <span class="reason-badge"><i class="uil uil-child"></i>Minor Child</span>
+                <span class="reason-badge"><i class="uil uil-user-plus"></i>Adoption</span>
+                <span class="reason-badge"><i class="uil uil-file-info-alt"></i>Gender / Identity</span>
+                <span class="reason-badge"><i class="uil uil-globe"></i>Migration / NRI</span>
+              </div>
+              <ul class="text-sm text-[#60697b] space-y-1 mb-0">
+                <li>• Name change for school-going children (with parents’ consent).</li>
+                <li>• Adoption related name & surname change.</li>
+                <li>• Gender / identity aligned name changes (case specific guidance).</li>
+                <li>• NRIs or people living outside state but having Indian documents.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-8">
+          <a href="./contact.html" class="btn btn-lg btn-grape text-white rounded-full">
+            Discuss Your Case with Us
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="wrapper bg-white">
+      <div class="container py-14 py-md-16">
+        <div class="row mb-8">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Frequently Asked Questions</h2>
+            <p class="sub-heading">
+              Kuch common doubts jo almost har client puchta hai – humne yaha ek jagah par clear kar diye.
+            </p>
+          </div>
+        </div>
+
+        <div class="accordion-wrapper" id="servicesFaq">
+
+          <div class="card plain accordion-item !mb-4 !shadow-sm !border !border-[#e6e9ef] !rounded-[0.4rem]">
+            <div class="card-header" id="faqOne">
+              <button class="accordion-button !text-[#343f52] !font-bold !text-[1rem]" data-bs-toggle="collapse"
+                data-bs-target="#collapseFaqOne" aria-expanded="true" aria-controls="collapseFaqOne">
+                Is it compulsory to do all three – Affidavit, Newspaper and Gazette?
+              </button>
+            </div>
+            <div id="collapseFaqOne" class="accordion-collapse collapse show" aria-labelledby="faqOne"
+              data-bs-parent="#servicesFaq">
+              <div class="card-body !text-[#60697b] !text-[0.9rem]">
+                In most states for permanent and official name change, yes – these three steps are standard: affidavit,
+                newspaper advertisement and Gazette notification. Exact requirement state-wise alag ho sakta hai, jo hum
+                aapko process start karte hi bata dete hain.
+              </div>
+            </div>
+          </div>
+
+          <div class="card plain accordion-item !mb-4 !shadow-sm !border !border-[#e6e9ef] !rounded-[0.4rem]">
+            <div class="card-header" id="faqTwo">
+              <button class="accordion-button collapsed !text-[#343f52] !font-bold !text-[1rem]"
+                data-bs-toggle="collapse" data-bs-target="#collapseFaqTwo" aria-expanded="false"
+                aria-controls="collapseFaqTwo">
+                Can I do only affidavit or only newspaper ad through your service?
+              </button>
+            </div>
+            <div id="collapseFaqTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo"
+              data-bs-parent="#servicesFaq">
+              <div class="card-body !text-[#60697b] !text-[0.9rem]">
+                Yes, agar aapko sirf affidavit drafting ya sirf newspaper ad ki requirement hai to woh bhi separate
+                service ke form mein available hai. Lekin legal name change complete karne ke liye full process karna
+                recommended hai.
+              </div>
+            </div>
+          </div>
+
+          <div class="card plain accordion-item !mb-4 !shadow-sm !border !border-[#e6e9ef] !rounded-[0.4rem]">
+            <div class="card-header" id="faqThree">
+              <button class="accordion-button collapsed !text-[#343f52] !font-bold !text-[1rem]"
+                data-bs-toggle="collapse" data-bs-target="#collapseFaqThree" aria-expanded="false"
+                aria-controls="collapseFaqThree">
+                How much time does the full process usually take?
+              </button>
+            </div>
+            <div id="collapseFaqThree" class="accordion-collapse collapse" aria-labelledby="faqThree"
+              data-bs-parent="#servicesFaq">
+              <div class="card-body !text-[#60697b] !text-[0.9rem]">
+                Affidavit generally 1 day, newspaper ad 1–3 days and Gazette around 3–5 weeks. Total timeline depend
+                karta hai aapke documents, state rules aur department ke workload pe.
+              </div>
+            </div>
+          </div>
+
+          <div class="card plain accordion-item !mb-4 !shadow-sm !border !border-[#e6e9ef] !rounded-[0.4rem]">
+            <div class="card-header" id="faqFour">
+              <button class="accordion-button collapsed !text-[#343f52] !font-bold !text-[1rem]"
+                data-bs-toggle="collapse" data-bs-target="#collapseFaqFour" aria-expanded="false"
+                aria-controls="collapseFaqFour">
+                I stay outside India. Can I still change my name in Indian records?
+              </button>
+            </div>
+            <div id="collapseFaqFour" class="accordion-collapse collapse" aria-labelledby="faqFour"
+              data-bs-parent="#servicesFaq">
+              <div class="card-body !text-[#60697b] !text-[0.9rem]">
+                Mostly yes, lekin process thoda different hota hai. Kuch states me Indian address proof / presence
+                required hota hai, kuch me NRI ke liye separate process hota hai. Hum aapka case samajh kar best
+                possible route suggest karte hain.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="wrapper bg-soft-grape">
+      <div class="container py-14 py-md-16">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <h2 class="section-heading mb-3">Ready to Start Your Name Change?</h2>
+            <p class="sub-heading mb-5">
+              Documents hum sambhalte hain, process hum dekhte hain, aap sirf apne naye naam ke saath naya chapter
+              start kijiye.
+            </p>
+            <a href="./contact.html#enquiry"
+              class="btn btn-lg btn-grape text-white rounded-full !px-8 !py-3 inline-flex items-center gap-2">
+              Talk to Our Team
+              <i class="uil uil-message"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- FOOTER (same style as other pages) -->
+  <footer class="!bg-[#ffffff]">
+    <div class="container py-16 xl:!py-20 lg:!py-20 md:!py-20">
+      <div class="flex flex-wrap mx-[-15px] !mt-[-30px] xl:!mt-0 lg:!mt-0">
+        <div
+          class="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] !px-[15px] max-w-full xl:!mt-0 lg:!mt-0 !mt-[30px]">
+          <div class="widget">
+            <h4 class="widget-title !mb-3">Name Changed Ads</h4>
+            <p class="!mb-4">© 2025 applynamechange.in. <br class="hidden xl:block lg:block">All rights reserved.</p>
+            <nav class="nav social">
+              <a class="!text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                href="#"><i class="uil uil-twitter before:content-['\ed59'] !text-[#5daed5] text-[1rem]"></i></a>
+              <a class="!text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                href="#"><i class="uil uil-facebook-f before:content-['\eae2'] !text-[#4470cf] text-[1rem]"></i></a>
+              <a class="!text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                href="#"><i class="uil uil-dribbble before:content-['\eaa2'] !text-[#e94d88] text-[1rem]"></i></a>
+              <a class="!text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                href="#"><i class="uil uil-instagram before:content-['\eb9c'] !text-[#d53581] text-[1rem]"></i></a>
+              <a class="!text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                href="#"><i class="uil uil-youtube before:content-['\edb5'] !text-[#c8312b] text-[1rem]"></i></a>
+            </nav>
+          </div>
+        </div>
+
+        <div
+          class="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] !px-[15px] max-w-full xl:!mt-0 lg:!mt-0 !mt-[30px]">
+          <div class="widget">
+            <h4 class="widget-title !mb-3">Contact</h4>
+            <address>
+              203, Riyo Advertising, Mumbai<br>
+              <a href="mailto:info@riyoadvertising.com">info@riyoadvertising.com</a><br>
+              +91 9326098181
+            </address>
+          </div>
+        </div>
+
+        <div
+          class="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] !px-[15px] max-w-full xl:!mt-0 lg:!mt-0 !mt-[30px]">
+          <div class="widget">
+            <h4 class="widget-title !mb-3">Newsletter</h4>
+            <p class="!mb-4">Updates on Gazette rules, timelines and documentation tips.</p>
+            <div id="mc_embed_signup2">
+              <form
+                action="https://gmail.us20.list-manage.com/subscribe/post?u=ddc180777a163e0f9f66ee014&amp;id=4b1bcfa0bc&amp;f_id=00f1d1e0f0"
+                method="post" id="mc-embedded-subscribe-form2" name="mc-embedded-subscribe-form" class="validate"
+                target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll2">
+                  <div class="mc-field-group flex">
+                    <input type="email" value="" name="EMAIL" class="required email form-control !h-[3rem] !rounded-l-full"
+                      id="mce-EMAIL2" placeholder="Email Address">
+                    <input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe2"
+                      class="btn btn-grape !text-white !bg-[#605dba] border-[#605dba] hover:text-white hover:bg-[#605dba] !relative z-[2] focus:z-[5] border-0 !rounded-r-full !h-[3rem] !px-6">
+                  </div>
+                  <div id="mce-responses2" class="clear">
+                    <div class="response" id="mc-error-response2" style="display:none"></div>
+                    <div class="response" id="mc-success-response2" style="display:none"></div>
+                  </div>
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_ddc180777a163e0f9f66ee014_4b1bcfa0bc" tabindex="-1" value="">
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCROLL TO TOP -->
+  <div
+    class="progress-wrap fixed w-[2.3rem] h-[2.3rem] cursor-pointer block shadow-[inset_0_0_0_0.1rem_rgba(128,130,134,0.25)] z-[1010] opacity-0 invisible translate-y-3 transition-all duration-[0.2s] ease-[linear,margin-right] delay-[0s] rounded-[100%] right-6 bottom-6 motion-reduce:transition-none after:absolute after:content-['\e951'] after:text-center after:leading-[2.3rem] after:text-[1.2rem] after:!text-[#605dba] after:h-[2.3rem] after:w-[2.3rem] after:cursor-pointer after:block after:z-[1] after:transition-all after:duration-[0.2s] after:ease-linear after:left-0 after:top-0 motion-reduce:after:transition-none after:font-Unicons">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path class="fill-none stroke-[#605dba] stroke-[4] box-border transition-all duration-[0.2s] ease-linear motion-reduce:transition-none"
+        d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+
+  <script src="./assets/js/plugins.js"></script>
+  <script src="./assets/js/theme.js"></script>
+  <script>
+    // tiny reveal for Gazette doc cards — staggered and graceful
+    (function(){
+      const group = document.querySelector('.doc-grid-horizontal');
+      if(!group) return;
+      const cards = Array.from(group.querySelectorAll('.doc-card'));
+
+      function staggerIn(el, idx){
+        el.style.transitionDelay = (idx * 70) + 'ms';
+        el.classList.add('in-view');
+      }
+
+      if('IntersectionObserver' in window){
+        const obs = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if(entry.isIntersecting){
+              const idx = cards.indexOf(entry.target);
+              staggerIn(entry.target, idx >= 0 ? idx : 0);
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.18 });
+        cards.forEach(c => obs.observe(c));
+
+        // reveal timeline steps when timeline box appears
+        const timelineParent = document.querySelector('.processing-timeline');
+        if(timelineParent){
+          const timelineSteps = Array.from(timelineParent.querySelectorAll('.timeline-step'));
+          const timelineObserver = new IntersectionObserver((entries, tObs) => {
+            entries.forEach(entry => {
+              if(entry.isIntersecting){
+                timelineSteps.forEach((el, idx) => setTimeout(()=> el.classList.add('in-view'), idx * 90));
+                tObs.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.22 });
+          timelineObserver.observe(timelineParent);
+        }
+      } else {
+        cards.forEach((c, i)=> setTimeout(()=> c.classList.add('in-view'), i * 80));
+        const timelineParent = document.querySelector('.processing-timeline');
+        if(timelineParent){
+          const timelineSteps = Array.from(timelineParent.querySelectorAll('.timeline-step'));
+          timelineSteps.forEach((el, idx)=> setTimeout(()=> el.classList.add('in-view'), idx * 90));
+        }
+      }
+    })();
+  </script>
+</body>
+
+</html>
