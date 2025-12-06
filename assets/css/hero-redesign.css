@@ -81,72 +81,66 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.cylinder-container {
+/* --- FADE ANIMATION HERO RIGHT SIDE --- */
+
+.hero-fade-wrapper {
+  position: relative;
   width: 100%;
-  min-height: 420px; /* Using min-height to allow growth */
+  min-height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
-.cylinder {
-  position: relative;
-  width: 100%;
-  height: 350px;
-  min-height: 100%;
-  transform-style: preserve-3d;
-  animation: rotate-cylinder 14s infinite linear;
-}
-
-.cylinder .card {
+.fade-item {
   position: absolute;
-  width: 100%;
-  height: auto;
-  min-height: 100%;
-  padding: 3rem; /* Increased padding */
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
-  color: #343f52;
-  backface-visibility: hidden; /* Hide the back of the card */
-  transition: opacity 0.5s ease;
+  max-width: 600px;
+  opacity: 0;
+  animation: fadeText 12s infinite;
 }
 
-.cylinder .card h4 {
-  font-size: 1.6rem; /* Increased font size */
+.fade-item:nth-child(1) { animation-delay: 0s; }
+.fade-item:nth-child(2) { animation-delay: 4s; }
+.fade-item:nth-child(3) { animation-delay: 8s; }
+
+.fade-item h4 {
+  font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 0.75rem;
+  color: #343f52;
 }
 
-.cylinder .card p {
-  font-size: 1rem; /* Increased font size */
+.fade-item p {
+  font-size: 1rem;
+  color: #6c757d;
   line-height: 1.6;
-  margin: 0;
 }
 
-/* Position cards around the cylinder */
-.face-1 {
-  transform: rotateY(0deg) translateZ(210px); /* Increased radius */
-}
-.face-2 {
-  transform: rotateY(120deg) translateZ(210px); /* Increased radius */
-}
-.face-3 {
-  transform: rotateY(240deg) translateZ(210px); /* Increased radius */
+/* Smooth fade animation */
+@keyframes fadeText {
+  0%   { opacity: 0; transform: translateY(10px); }
+  10%  { opacity: 1; transform: translateY(0); }
+  30%  { opacity: 1; }
+  40%  { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 0; }
 }
 
-@keyframes rotate-cylinder {
-  0% { transform: rotateY(0deg); }
-  100% { transform: rotateY(360deg); }
-}
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .hero-fade-wrapper {
+    min-height: 300px;
+  }
 
+  .fade-item h4 {
+    font-size: 1.4rem;
+  }
+
+  .fade-item p {
+    font-size: 0.95rem;
+  }
+}
 /* Opacity animation for highlighting the front card */
 .face-1 { animation: highlight-face-1 14s infinite; }
 .face-2 { animation: highlight-face-2 14s infinite; }
