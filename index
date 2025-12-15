@@ -24827,3 +24827,63 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </body>
 </html>
+
+
+
+<div class="container py-12 lg:!py-16 xl:!py-20">
+    <div class="flex flex-wrap mx-[-15px] !text-center">
+      <div class="md:w-10/12 lg:w-9/12 xl:w-8/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mx-auto !relative">
+        <h2 class="!text-[0.8rem] !leading-[1.35] !tracking-[0.02rem] uppercase !text-[#aab0bc] !mb-3">Reasons</h2>
+        <h3 class="xl:!text-[2rem] !text-[calc(1.325rem_+_0.9vw)] font-semibold !leading-[1.2] !mb-4 text-[#343f52]">
+          Why Book <span class="text-gradient gradient-7">Change Of Name Ad</span> in Newspapers?
+        </h3>
+        <p class="lead !text-[1rem] !leading-[1.7] !font-normal !mb-8 lg:!px-0 xl:!px-0 xxl:!px-0 text-[#60697b]">
+          People may want to change their names for a variety of reasons, such as post-marriage, for astrological reasons, or just to correct a spelling mistake. Here is why you should book your change of name ads in newspapers:
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-wrap mx-[-15px] mt-8" data-cue="fadeIn">
+      <!-- Reason 1 -->
+      <div class="md:w-6/12 lg:w-4/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mt-6">
+        <div class="card h-full !shadow-lg !rounded-[0.8rem] p-6 service-box-hover">
+          <div class="svg-bg svg-bg-lg bg-custom-1 !rounded-[0.8rem] !mb-4 mx-auto"><img src="assets/img/icons/lineal/certificate.svg" style="width: 2rem; height: 2rem;" alt="Certificate Icon"></div>
+          <h4 class="!text-[1rem]">Fulfils Legal Requirements</h4>
+          <p class="!mb-0">Publishing a change of name advertisement in a newspaper is a fulfilment of a mandatory legal requirement.</p>
+        </div>
+      </div>
+      <!-- Reason 2 -->
+      <div class="md:w-6/12 lg:w-4/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mt-6">
+        <div class="card h-full !shadow-lg !rounded-[0.8rem] p-6 service-box-hover">
+          <div class="svg-bg svg-bg-lg bg-custom-2 !rounded-[0.8rem] !mb-4 mx-auto"><img src="assets/img/icons/lineal/edit-text.svg" style="width: 2rem; height: 2rem;" alt="Edit Text Icon"></div>
+          <h4 class="!text-[1rem]">Helps Rectify Spelling Mistakes</h4>
+          <p class="!mb-0">A change of name advertisement helps to rectify spelling mistakes and resolve confusion arising out of the misspelt name.</p>
+        </div>
+      </div>
+      <!-- Reason 3 -->
+      <div class="md:w-6/12 lg:w-4/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mt-6">
+        <div class="card h-full !shadow-lg !rounded-[0.8rem] p-6 service-box-hover">
+          <div class="svg-bg svg-bg-lg bg-custom-3 !rounded-[0.8rem] !mb-4 mx-auto"><img src="assets/img/icons/lineal/id-card.svg" style="width: 2rem; height: 2rem;" alt="ID Card Icon"></div>
+          <h4 class="!text-[1rem]">Provides Information</h4>
+          <p class="!mb-0">Change of name advertisements provide information about a person’s identity. They contain the person’s old name, as well as the new name that they shall be known as.</p>
+        </div>
+      </div>
+      <!-- Reason 4 -->
+      <div class="md:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mt-6 mx-auto lg:mx-0">
+        <div class="card h-full !shadow-lg !rounded-[0.8rem] p-6 service-box-hover">
+          <div class="svg-bg svg-bg-lg bg-custom-4 !rounded-[0.8rem] !mb-4 mx-auto"><img src="assets/img/icons/lineal/megaphone.svg" style="width: 2rem; height: 2rem;" alt="Megaphone Icon"></div>
+          <h4 class="!text-[1rem]">Serves as an Announcement</h4>
+          <p class="!mb-0">Change of name advertisements in newspapers serve as a public announcement of a name change.</p>
+        </div>
+      </div>
+      <!-- Reason 5 -->
+      <div class="md:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mt-6 mx-auto lg:mx-0">
+        <div class="card h-full !shadow-lg !rounded-[0.8rem] p-6 service-box-hover">
+          <div class="svg-bg svg-bg-lg bg-custom-5 !rounded-[0.8rem] !mb-4 mx-auto"><img src="assets/img/icons/solid/globe-2.svg" style="width: 2rem; height: 2rem;" alt="Globe Icon"></div>
+          <h4 class="!text-[1rem]">Wide Reach of Newspapers</h4>
+          <p class="!mb-0">In India, newspapers are read by a large number of people in cities and villages across the country. Newspapers are read by people from all walks of life.</p>
+        </div>
+</div>
+    </div>
+  </div>
+</section>
+bhai iss section me upar se bhaut jyada margin hai to bhaut jyada gap ho rha upar se wo kaisae kam hi ga wo bta

@@ -171,3 +171,918 @@ Contact & Support
 •	Call: +91 9326098181
 •	WhatsApp: For document checks, doubts, and step-by-step guidance
 •	Office: 5, Riyo Media House, Rajasthan Technical Centre, Patanwala Complex, LBS Road, Opp. Shreyas Cinema, Near HP Petrol Pump, Ghatkopar (W), Mumbai – 400086 (10:30 AM to 6:30 PM)[9]
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Official Gazette Notification for Name Change in Karnataka. Full online service for Affidavit, Newspaper Ads, and Gazette Application.">
+  <meta name="keywords"
+    content="gazette name change karnataka, name change gazette, erajyapatra name change, change of name affidavit, gazette notification bangalore">
+  <title>Gazette Name Change in Karnataka | Name Changed Ads</title>
+
+  <link rel="shortcut icon" href="./assets/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="./assets/fonts/unicons/unicons.css">
+  <link rel="stylesheet" href="./assets/css/plugins.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./assets/css/colors/grape.css">
+  <link rel="stylesheet" href="./assets/css/responsive-index.css">
+  
+  <!-- Fonts -->
+  <link rel="preload" href="./assets/css/fonts/space.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap">
+
+  <style>
+    /* ========= CUSTOM CSS REUSED FROM TEMPLATE ========= */
+    
+    :root {
+      --color-primary: #605dba;
+      --color-primary-dark: #4f46e5;
+      --color-secondary: #f0f0f8;
+      --color-text: #343f52;
+      --color-text-light: #60697b;
+      --border-color: #e6e9ef;
+      --card-shadow: 0 0 1.25rem rgba(30, 34, 40, 0.04);
+      --card-shadow-hover: 0 1rem 3rem rgba(30, 34, 40, 0.15);
+    }
+
+    body {
+      font-family: 'Manrope', sans-serif;
+      background-color: #fefefe;
+      color: var(--color-text-light);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--color-text);
+      font-family: 'Manrope', sans-serif;
+      font-weight: 700;
+    }
+
+    /* Page Header */
+    .page-header-bg {
+        background-color: #f3f5f7;
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+        text-align: center;
+    }
+
+    /* Layout Grid */
+    .main-layout {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 3rem;
+      gap: 2rem;
+    }
+
+    .sidebar-col {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .content-col {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    @media (min-width: 992px) {
+      .sidebar-col {
+        flex: 0 0 280px;
+        max-width: 280px;
+      }
+      .content-col {
+        flex: 1;
+        max-width: calc(100% - 312px);
+      }
+    }
+
+    /* Filter Card */
+    .filter-card {
+      background: #fff;
+      border: 1px solid var(--border-color);
+      border-radius: 0.8rem;
+      padding: 1.5rem;
+      position: sticky;
+      top: 6rem;
+      box-shadow: var(--card-shadow);
+    }
+
+    .filter-header {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #959ca9;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .form-select-custom {
+      width: 100%;
+      padding: 0.6rem 1rem;
+      border: 1px solid #dce1e7;
+      border-radius: 0.4rem;
+      font-size: 0.9rem;
+      color: var(--color-text);
+      background-color: #fff;
+      margin-bottom: 1rem;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343f52' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      background-size: 16px 12px;
+      appearance: none;
+    }
+
+    .form-select-custom:focus {
+        border-color: var(--color-primary);
+        outline: 0;
+    }
+
+    .btn-filter {
+      width: 100%;
+      background: var(--color-primary);
+      color: #fff;
+      border: none;
+      padding: 0.7rem;
+      border-radius: 0.4rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .btn-filter:hover {
+        background: var(--color-primary-dark);
+        color: #fff;
+    }
+
+    /* Steps Bar (Updated for Gazette) */
+    .steps-bar {
+      display: flex;
+      justify-content: space-between;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 0.6rem;
+      border: 1px solid var(--border-color);
+      margin-bottom: 2rem;
+      gap: 1rem;
+      overflow-x: auto;
+    }
+
+    .step-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--color-text-light);
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+
+    .step-item.active {
+      color: var(--color-primary);
+      font-weight: 700;
+    }
+
+    .step-number {
+      width: 28px;
+      height: 28px;
+      background: #f0f0f8;
+      color: var(--color-text-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .step-item.active .step-number {
+      background: var(--color-primary);
+      color: #fff;
+    }
+
+    /* Package/Service Card */
+    .packages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .package-card {
+      background: #fff;
+      border: 1px solid var(--border-color);
+      border-radius: 0.8rem;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .package-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--card-shadow-hover);
+      border-color: rgba(96, 93, 186, 0.3);
+    }
+
+    .best-seller-badge {
+      position: absolute;
+      top: 15px;
+      right: -30px;
+      background: #fab758;
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 5px 30px;
+      transform: rotate(45deg);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .pkg-title {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      color: var(--color-text);
+    }
+
+    .pkg-desc {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      color: var(--color-text-light);
+      line-height: 1.6;
+    }
+
+    .pkg-price {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: #e2626b;
+      margin-bottom: 1rem;
+    }
+
+    .pkg-actions {
+      margin-top: auto;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .btn-pkg {
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 50rem;
+      font-weight: 600;
+      text-align: center;
+      transition: 0.2s;
+      cursor: pointer;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .btn-pkg-primary {
+      background: var(--color-primary);
+      color: #fff;
+      border: 1px solid var(--color-primary);
+    }
+    .btn-pkg-primary:hover {
+        background: var(--color-primary-dark);
+        color: #fff;
+    }
+
+    .btn-pkg-outline {
+      background: transparent;
+      color: var(--color-primary);
+      border: 1px solid var(--color-primary);
+    }
+    .btn-pkg-outline:hover {
+        background: #f0f0f8;
+        color: var(--color-primary-dark);
+    }
+
+    /* Content Sections (SEO Text) */
+    .content-card {
+        background: #fff;
+        border-radius: 0.8rem;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        border: 1px solid var(--border-color);
+    }
+    
+    .content-card h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: var(--color-text);
+    }
+    
+    .content-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+        margin-top: 1.5rem;
+        color: var(--color-text);
+    }
+
+    .content-card p, .content-card li {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+    }
+
+    .info-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1rem;
+    }
+
+    .info-list li {
+        position: relative;
+        padding-left: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .info-list li::before {
+        content: '\2713'; /* Checkmark */
+        position: absolute;
+        left: 0;
+        color: var(--color-primary);
+        font-weight: bold;
+    }
+
+    .ordered-list {
+        list-style: none;
+        counter-reset: my-counter;
+        padding-left: 0;
+    }
+    .ordered-list li {
+        counter-increment: my-counter;
+        margin-bottom: 1.5rem;
+        position: relative;
+        padding-left: 2.5rem;
+    }
+    .ordered-list li::before {
+        content: counter(my-counter);
+        background: var(--color-secondary);
+        color: var(--color-primary);
+        font-weight: bold;
+        width: 1.8rem;
+        height: 1.8rem;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 1.8rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    /* Info Table */
+    .info-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+    .info-table th {
+        background-color: #f3f5f7;
+        padding: 0.8rem;
+        text-align: left;
+        font-weight: 700;
+        color: var(--color-text);
+        border: 1px solid var(--border-color);
+    }
+    .info-table td {
+        padding: 0.8rem;
+        border: 1px solid var(--border-color);
+        color: var(--color-text-light);
+    }
+    .info-table tr:nth-child(even) {
+        background-color: #fbfbfb;
+    }
+
+    /* Accordion FAQ */
+    .accordion-item {
+        border: 1px solid var(--border-color);
+        border-radius: 0.5rem;
+        margin-bottom: 0.8rem;
+        overflow: hidden;
+    }
+    .accordion-button {
+        background-color: #fff;
+        color: var(--color-text);
+        font-weight: 600;
+        font-size: 0.95rem;
+        padding: 1rem 1.25rem;
+    }
+    .accordion-button:not(.collapsed) {
+        color: var(--color-primary);
+        background-color: #f0f0f8;
+        box-shadow: none;
+    }
+    .accordion-body {
+        padding: 1.25rem;
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+    
+    .highlight-box {
+        background: #fef3e4;
+        border: 1px dashed #fab758;
+        padding: 1.2rem;
+        border-radius: 0.6rem;
+        margin-top: 1.5rem;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="grow shrink-0">
+
+    <!-- ===== HEADER (Reusable) ===== -->
+        <header>
+      <nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-light caret-none">
+        <div class="container xl:!flex-row lg:!flex-row !flex-nowrap items-center">
+          <div class="navbar-brand w-full">
+            <a href="./index.html">
+              <img src="./assets/img/namechangeadssmalllogo.png" style="max-height: 40px;" alt="Name Changed Ads">
+            </a>
+          </div>
+          <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+            <div class="offcanvas-header xl:!hidden lg:!hidden flex items-center justify-between flex-row p-6">
+              <h3 class="!text-white xl:!text-[1.5rem] !text-[calc(1.275rem_+_0.3vw)] !mb-0">Name Changed Ads</h3>
+              <button type="button"
+                class="btn-close btn-close-white !mr-[-0.75rem] m-0 p-0 leading-none !text-[#343f52] transition-all duration-[0.2s] ease-in-out border-0 motion-reduce:transition-none before:text-[1.05rem] before:text-white before:content-['\ed3b'] before:w-[1.8rem] before:h-[1.8rem] before:leading-[1.8rem] before:shadow-none before:transition-[background] before:duration-[0.2s] before:ease-in-out before:!flex before:justify-center before:items-center before:m-0 before:p-0 before:rounded-[100%] hover:no-underline bg-inherit before:bg-[rgba(255,255,255,.08)] before:font-Unicons hover:before:bg-[rgba(0,0,0,.11)]  "
+                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body xl:!ml-auto lg:!ml-auto flex  flex-col !h-full">
+              <!-- Updated Navigation -->
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem] active"
+                    href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]"
+                    href="./services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]"
+                    href="#process">How It Works</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]"
+                    href="./about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link font-bold !tracking-[normal] hover:!text-[#605dba] !text-[.85rem]"
+                    href="./contact.html">Contact Us</a>
+                </li>
+              </ul>
+              <!-- /.navbar-nav -->
+              <div class="offcanvas-footer xl:!hidden lg:!hidden">
+                <div>
+                  <a href="mailto:info@riyoadvertising.com" class="link-inverse">info@riyoadvertising.com</a>
+                  <br> +91 9326098181 <br>
+                  <nav class="nav social social-white !mt-4">
+                    <a class="!text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                      href="#"><i class="uil uil-twitter before:content-['\ed59'] !text-white text-[1rem]"></i></a>
+                    <a class="!text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                      href="#"><i class="uil uil-facebook-f before:content-['\eae2'] !text-white text-[1rem]"></i></a>
+                    <a class="!text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                      href="#"><i class="uil uil-dribbble before:content-['\eaa2'] !text-white text-[1rem]"></i></a>
+                    <a class="!text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                      href="#"><i class="uil uil-instagram before:content-['\eb9c'] !text-white text-[1rem]"></i></a>
+                    <a class="!text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                      href="#"><i class="uil uil-youtube before:content-['\edb5'] !text-white text-[1rem]"></i></a>
+                  </nav>
+                  <!-- /.social -->
+                </div>
+              </div>
+              <!-- /.offcanvas-footer -->
+            </div>
+            <!-- /.offcanvas-body -->
+          </div>
+          <!-- /.navbar-collapse -->
+          <div class="navbar-other w-full !flex !ml-auto">
+            <ul class="navbar-nav !flex-row !items-center !ml-auto">
+              <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-info"><i
+                    class="uil uil-info-circle before:content-['\eb99'] !text-[1.1rem] hover:!text-[#605dba]"></i></a>
+              </li>
+              <li class="nav-item xl:!hidden lg:!hidden">
+                <button class="hamburger offcanvas-nav-btn"><span></span></button>
+              </li>
+            </ul>
+            <!-- /.navbar-nav -->
+          </div>
+          <!-- /.navbar-other -->
+        </div>
+        <!-- /.container -->
+      </nav>
+      <!-- /.navbar -->
+      <div class="offcanvas offcanvas-end text-inverse !text-[#cacaca] opacity-100" id="offcanvas-info"
+        data-bs-scroll="true">
+        <div class="offcanvas-header flex flex-row items-center justify-between p-[1.5rem]">
+          <h3 class="!text-white xl:!text-[1.5rem] !text-[calc(1.275rem_+_0.3vw)] !leading-[1.4] !mb-0">Name Changed Ads
+          </h3>
+          <button type="button" class="btn-close btn-close-white !mr-[-0.5rem] m-0 p-0" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body !pb-[1.5rem]">
+          <!-- Fetched Content -->
+          <div class="widget !mb-8">
+            <p>Expert guidance for the complete name change process. We provide a one-stop solution, from affidavit
+              drafting to newspaper ads and Gazette publication, ensuring you meet all legal requirements with ease.</p>
+          </div>
+          <!-- /.widget -->
+          <div class="widget !mb-8">
+            <h4 class="widget-title !text-white !mb-[0.75rem] !text-[.95rem] !leading-[1.45]">Contact Info</h4>
+            <address class=" not-italic !leading-[inherit] !mb-[1rem]"> <strong>Mumbai Office:</strong> 5 Riyo Media
+              House, Patanwala Estate, L.B.S. Marg, Ghatkopar West, Mumbai-400 086</address>
+            <a class="!text-[#cacaca] hover:!text-[#605dba]"
+              href="mailto:info@riyoadvertising.com">info@riyoadvertising.com</a><br> +91 9326098181
+          </div>
+          <!-- /.widget -->
+          <div class="widget !mb-8">
+            <h4 class="widget-title !text-white !mb-[0.75rem] !text-[.95rem] !leading-[1.45]">Learn More</h4>
+            <ul class="list-unstyled !pl-0">
+              <li><a class="!text-[#cacaca] hover:!text-[#605dba]" href="#services">All Services</a></li>
+              <li class="!mt-[.35rem]"><a class="!text-[#cacaca] hover:!text-[#605dba]" href="#process">How It Works</a>
+              </li>
+              <li class="!mt-[.35rem]"><a class="!text-[#cacaca] hover:!text-[#605dba]" href="#faq">FAQs</a></li>
+              <li class="!mt-[.35rem]"><a class="!text-[#cacaca] hover:!text-[#605dba]" href="./contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+          <div class="widget">
+            <h4 class="widget-title !text-white !mb-[0.75rem] !text-[.95rem] !leading-[1.45]">Follow Us</h4>
+            <nav class="nav social social-white">
+              <a class="!text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                href="#"><i class="uil uil-twitter before:content-['\ed59'] !text-white text-[1rem]"></i></a>
+              <a class="!text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                href="#"><i class="uil uil-facebook-f before:content-['\eae2'] !text-white text-[1rem]"></i></a>
+              <a class="!text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                href="#"><i class="uil uil-dribbble before:content-['\eaa2'] !text-white text-[1rem]"></i></a>
+              <a class="!text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                href="#"><i class="uil uil-instagram before:content-['\eb9c'] !text-white text-[1rem]"></i></a>
+              <a class="!text-[#cacaca] text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]"
+                href="#"><i class="uil uil-youtube before:content-['\edb5'] !text-white text-[1rem]"></i></a>
+            </nav>
+            <!-- /.social -->
+          </div>
+          <!-- /.widget -->
+          <!-- End Fetched Content -->
+        </div>
+        <!-- /.offcanvas-body -->
+      </div>
+      <!-- /.offcanvas -->
+    </header>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header-bg">
+        <div class="container">
+            <h1 class="display-3 mb-2">Gazette Notification for Name Change in Karnataka</h1>
+            <p class="lead fs-lg mb-0 text-muted">The official legal process to establish your new name across India.</p>
+        </div>
+    </section>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <section class="wrapper !bg-[#f9fafb] pb-16">
+      <div class="container">
+        
+        <div class="main-layout">
+            
+            <!-- LEFT SIDEBAR -->
+            <div class="sidebar-col">
+                <aside class="filter-card">
+                    <div class="filter-header"><i class="uil uil-filter"></i> Service Filter</div>
+                    
+                    <div class="mb-3">
+                        <label class="text-xs font-bold text-gray-500 mb-1 block">Service Type</label>
+                        <select class="form-select-custom">
+                            <option selected>Gazette Notification</option>
+                            <option>Newspaper Ad Only</option>
+                            <option>Affidavit Only</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="text-xs font-bold text-gray-500 mb-1 block">Region</label>
+                        <select class="form-select-custom">
+                            <option selected>Karnataka</option>
+                            <option>Maharashtra</option>
+                            <option>Central India</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="text-xs font-bold text-gray-500 mb-1 block">Reason</label>
+                        <select class="form-select-custom">
+                            <option selected>Name Change</option>
+                            <option>Religion Change</option>
+                            <option>Adoption</option>
+                            <option>Correction</option>
+                        </select>
+                    </div>
+
+                    <button class="btn-filter">Start Application</button>
+                    
+                    <div class="mt-6 pt-6 border-t border-gray-200">
+                        <p class="text-xs text-gray-500 mb-2 font-bold uppercase">Need Help?</p>
+                        <p class="text-sm mb-1"><i class="uil uil-phone-alt mr-1"></i> +91 9326098181</p>
+                        <p class="text-sm"><i class="uil uil-envelope mr-1"></i> info@riyoadvertising.com</p>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="content-col">
+                
+                <!-- STEPS INDICATOR (Customized for Gazette) -->
+                <div class="steps-bar">
+                    <div class="step-item active">
+                        <div class="step-number">1</div> Affidavit
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">2</div> Newspaper Ad
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">3</div> Gazette Filing
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">4</div> Publication
+                    </div>
+                </div>
+
+                <!-- MAIN SERVICE CARD -->
+                <div class="packages-grid">
+                    <article class="package-card" style="border-top: 4px solid var(--color-primary);">
+                        <div class="best-seller-badge">Recommended</div>
+                        <h2 class="pkg-title">Online Gazette Name Change Service in Karnataka</h2>
+                        <p class="pkg-desc">Our complete service takes the hassle out of everything—done right from your home, no queues or confusion! We handle Affidavit drafting, Newspaper Ads (English + Kannada), Digital Prep, and Gazette Submission.</p>
+                        
+                        <div class="grid md:grid-cols-2 gap-4 mb-6">
+                            <div class="bg-gray-50 p-4 rounded">
+                                <h5 class="mb-2 text-primary">What We Handle</h5>
+                                <ul class="text-sm space-y-2 list-none p-0">
+                                    <li><i class="uil uil-check text-green-500"></i> Draft & Notarize Affidavit</li>
+                                    <li><i class="uil uil-check text-green-500"></i> Publish 2 Newspaper Ads</li>
+                                    <li><i class="uil uil-check text-green-500"></i> Digital CD Prep & Govt Fee Payment</li>
+                                    <li><i class="uil uil-check text-green-500"></i> File via eRajyapatra & Track Status</li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-50 p-4 rounded">
+                                <h5 class="mb-2 text-primary">Why Choose Us</h5>
+                                <ul class="text-sm space-y-2 list-none p-0">
+                                    <li><i class="uil uil-star text-yellow-500"></i> Zero Rejection Guarantee</li>
+                                    <li><i class="uil uil-star text-yellow-500"></i> Full Support for NRIs & Minors</li>
+                                    <li><i class="uil uil-star text-yellow-500"></i> Updates via WhatsApp/Call</li>
+                                    <li><i class="uil uil-star text-yellow-500"></i> 10,000+ Happy Clients</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="pkg-actions justify-center">
+                             <a href="https://wa.me/919326098181" class="btn-pkg btn-pkg-primary">Start Your Application</a>
+                             <a href="tel:+919326098181" class="btn-pkg btn-pkg-outline">Call +91 9326098181</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Intro Card -->
+                <div class="content-card">
+                    <h2>What is a Gazette Name Change?</h2>
+                    <p>A Gazette name change is the official legal process of publishing your updated name in the Government Gazette, creating a public record that establishes its validity across India.</p>
+                    
+                    <h3 class="text-primary mt-6">Why Gazette Publication is Required?</h3>
+                    <ul class="info-list">
+                        <li><strong>Undisputed Legal Proof:</strong> Essential for updating Aadhaar, PAN, Passport, Banks, and IDs nationwide.</li>
+                        <li><strong>Transparency:</strong> Ensures transparency to prevent fraud, disputes, or identity theft through public notice.</li>
+                        <li><strong>Mandatory for Official Use:</strong> Required for government jobs, exams, and central records under the Indian Evidence Act.</li>
+                    </ul>
+                    <p class="mt-4">The notification holds standalone legal standing, recognized by all institutions.</p>
+                </div>
+
+                <!-- Process Steps -->
+                <div class="content-card">
+                    <h2>How It Works: Step-by-Step Process</h2>
+                    <p>Once you share your documents, we kick off the process immediately. Here is the typical workflow:</p>
+                    
+                    <ol class="ordered-list">
+                        <li>
+                            <strong>Affidavit Creation:</strong>
+                            <p class="mb-1">We draft a clear, notarized affidavit spelling out your old name, new name, and reason—tailored just for you.</p>
+                        </li>
+                        <li>
+                            <strong>Newspaper Ad:</strong>
+                            <p class="mb-1">Your name change gets announced publicly in a trusted national or local Karnataka paper (English + Kannada).</p>
+                        </li>
+                        <li>
+                            <strong>Digital Prep (CD/Text):</strong>
+                            <p class="mb-1">We format the exact Gazette notice in MS Word and burn it to a CD for seamless submission as required by the office.</p>
+                        </li>
+                        <li>
+                            <strong>Govt Fee Payment:</strong>
+                            <p class="mb-1">We handle the challan payment (typically ₹1,100+), attach the receipt, and keep everything transparent.</p>
+                        </li>
+                        <li>
+                            <strong>Application Filing:</strong>
+                            <p class="mb-1">Everything gets bundled—affidavit, ads, CD, proofs, fees—and submitted to the Gazette office via post, courier, or the eRajyapatra portal.</p>
+                        </li>
+                        <li>
+                            <strong>Gazette Publication:</strong>
+                            <p class="mb-1">Once approved (typically 4-6 weeks), your notice hits the Gazette of India or Karnataka eRajyapatra. You can download the PDF to update your official IDs!</p>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- Documents Required -->
+                <div class="content-card">
+                    <h2>Documents Required for Karnataka Gazette</h2>
+                    <p>To ensure a smooth approval, the following documents are essential:</p>
+                    
+                    <h3 class="text-sm font-bold uppercase text-gray-500 mb-3">Standard List</h3>
+                    <ul class="info-list mb-6">
+                        <li>Completed Gazette application form.</li>
+                        <li>Notarised affidavit on stamp paper.</li>
+                        <li>Identity proof: Aadhaar, PAN, passport, or voter ID.</li>
+                        <li>Address proof: Aadhaar, ration card, or utility bill.</li>
+                        <li>2-3 recent Passport-size photographs.</li>
+                    </ul>
+
+                    <h3 class="text-sm font-bold uppercase text-gray-500 mb-3">Additional Items</h3>
+                    <ul class="info-list">
+                        <li>Newspaper advertisement copies (Original).</li>
+                        <li>Marriage certificate / Divorce order (if applicable).</li>
+                        <li>Adoption papers or Religion-conversion proof.</li>
+                        <li>For Minors: Parent/guardian signature & birth certificate.</li>
+                    </ul>
+                </div>
+
+                <!-- Time & Cost -->
+                <div class="content-card">
+                    <h2>Time and Cost</h2>
+                    <p>The timeline and cost vary based on the urgency and specific requirements of your case.</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mt-4">
+                        <div class="bg-blue-50 p-4 rounded border border-blue-100">
+                            <h4 class="text-blue-800 mb-2">Processing Time</h4>
+                            <p class="text-sm mb-2"><strong>Standard:</strong> 25-45 days total (Affidavit + Ads + Publication).</p>
+                            <p class="text-sm"><strong>Tatkal:</strong> 2-3 weeks (available at extra fees).</p>
+                        </div>
+                        <div class="bg-green-50 p-4 rounded border border-green-100">
+                            <h4 class="text-green-800 mb-2">Cost Breakdown</h4>
+                            <p class="text-sm mb-1"><strong>Govt Fees:</strong> ₹1,100 - ₹3,650</p>
+                            <p class="text-sm mb-1"><strong>Affidavit/Notary:</strong> ₹200 - ₹500</p>
+                            <p class="text-sm"><strong>Newspaper Ads:</strong> ₹800 - ₹3,000</p>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-2">*Fees are approximate estimates. Our service package bundles these for convenience.</p>
+                </div>
+
+                <!-- Online Process -->
+                <div class="content-card">
+                    <h2>Online Process Through eRajyapatra</h2>
+                    <p>The Karnataka eRajyapatra portal enables digital submission. The process involves registering on the official site (erajyapatra.karnataka.gov.in), entering personal details, uploading scanned documents (Affidavit, ID, Ads), paying the fees online, and tracking the status until the PDF is published.</p>
+                    <div class="highlight-box">
+                        <strong>Who Can Apply?</strong>
+                        <ul class="list-disc pl-5 mt-2 text-sm">
+                            <li>Adults (18+) for personal reasons (numerology, corrections).</li>
+                            <li>Post-marriage/divorce individuals.</li>
+                            <li>Parents/guardians for minors (including adoption).</li>
+                            <li>Government employees (with NOC).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- After Publication -->
+                <div class="content-card">
+                    <h2>After Gazette Publication</h2>
+                    <p>Once published, use the Gazette Notification PDF as primary proof to update your records in this recommended order:</p>
+                    <ol class="ordered-list mt-4">
+                        <li><strong>Aadhaar:</strong> Submit Gazette copy online or at a center first.</li>
+                        <li><strong>PAN:</strong> Apply via NSDL/UTI portal with Gazette & Aadhaar.</li>
+                        <li><strong>Bank Accounts:</strong> Visit branches with Gazette & updated Aadhaar/PAN.</li>
+                        <li><strong>Passport:</strong> Reissue via Passport Seva with Gazette.</li>
+                        <li><strong>Driving License / Voter ID:</strong> Apply at RTO/Election office.</li>
+                    </ol>
+                </div>
+
+                <!-- Common Mistakes & Help -->
+                <div class="content-card">
+                    <h2>Common Mistakes to Avoid</h2>
+                    <p>Simple errors can cause delays or rejections. Be careful of:</p>
+                    <ul class="list-disc pl-5 mb-6 text-gray-700">
+                        <li>Mismatch between affidavit and newspaper ads (spellings/address).</li>
+                        <li>Spelling errors across different documents.</li>
+                        <li>Blurry or wrong-format document scans.</li>
+                        <li>Signature differences between forms and IDs.</li>
+                    </ul>
+
+                    <h2 class="mb-4">Related Guides</h2>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingChild">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseChild">
+                                    How to Change Name of a Minor Child?
+                                </button>
+                            </h2>
+                            <div id="collapseChild" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    For minors, the process requires an affidavit signed by parents, newspaper ads, and the birth certificate. The Gazette application is filed by the guardian.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingPan">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePan">
+                                    How to Name Change in Pan Card?
+                                </button>
+                            </h2>
+                            <div id="collapsePan" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Apply for a PAN correction online via NSDL or UTIITSL. Attach the Gazette notification and your updated Aadhaar as proof.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingPassport">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePassport">
+                                    How to Name Change in Passport?
+                                </button>
+                            </h2>
+                            <div id="collapsePassport" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    You must apply for a "Re-issue" of passport. Select "Change in Personal Particulars" and provide the Gazette notification, newspaper clippings, and affidavit.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action Footer -->
+                <div class="bg-primary text-white rounded-lg p-8 text-center shadow-lg">
+                    <h2 class="text-white mb-2">Ready to make your name change official?</h2>
+                    <p class="text-white/90 mb-6">Start with a quick chat, share your docs, and we'll handle the rest hassle-free!</p>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <a href="tel:+919844879323" class="bg-white text-primary font-bold py-3 px-6 rounded-full hover:bg-gray-100 transition">Call +91 9844879323</a>
+                        <a href="https://changeofname.in/" class="border border-white text-white font-bold py-3 px-6 rounded-full hover:bg-white/10 transition">Visit Website</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-dark text-inverse">
+      <div class="container py-12 xl:!py-16 lg:!py-16 md:!py-16">
+        <div class="flex flex-wrap mx-[-15px] mt-[-30px]">
+          <div class="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] px-[15px] mt-[30px]">
+            <div class="widget">
+              <h4 class="widget-title !text-white mb-3">Name Changed Ads</h4>
+              <p class="mb-4 text-[#cacaca]">© 2025 NameChangedAds.in.<br class="hidden xl:block lg:block">All rights reserved.</p>
+              <nav class="nav social social-white">
+                <a class="text-[#cacaca] hover:text-[#605dba] mr-2" href="#"><i class="uil uil-twitter"></i></a>
+                <a class="text-[#cacaca] hover:text-[#605dba] mr-2" href="#"><i class="uil uil-facebook-f"></i></a>
+                <a class="text-[#cacaca] hover:text-[#605dba] mr-2" href="#"><i class="uil uil-instagram"></i></a>
+              </nav>
+            </div>
+          </div>
+          <div class="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] px-[15px] mt-[30px]">
+            <div class="widget">
+              <h4 class="widget-title !text-white mb-3">Contact Us</h4>
+              <ul class="list-unstyled pl-0">
+                <li class="mt-[.35rem]"><a class="text-[#cacaca] hover:text-[#605dba]" href="#">Mumbai: +91 9326098181</a></li>
+                <li class="mt-[.35rem]"><a class="text-[#cacaca] hover:text-[#605dba]" href="#">Bangalore: +91 9844879323</a></li>
+                <li class="mt-[.35rem]"><a class="text-[#cacaca] hover:text-[#605dba]" href="mailto:info@riyoadvertising.com">info@riyoadvertising.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] px-[15px] mt-[30px]">
+            <div class="widget">
+              <h4 class="widget-title !text-white mb-3">Quick Links</h4>
+              <ul class="list-unstyled pl-0">
+                <li class="mt-[.35rem]"><a class="text-[#cacaca] hover:text-[#605dba]" href="index.html">Home</a></li>
+                <li class="mt-[.35rem]"><a class="text-[#cacaca] hover:text-[#605dba]" href="services.html">Services</a></li>
+                <li class="mt-[.35rem]"><a class="text-[#cacaca] hover:text-[#605dba]" href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="./assets/js/plugins.js"></script>
+  <script src="./assets/js/theme.js"></script>
+</body>
+
+</html>

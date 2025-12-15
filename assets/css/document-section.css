@@ -1,54 +1,115 @@
+/* =========================
+   HERO SECTION – CLEAN GRADIENT (NO BLOBS)
+   ========================= */
 
-.document-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.75rem;
+.hero-modern {
+  margin-top: 80px;
+  position: relative;
+  overflow: hidden;
+
+  /* SOFT PROFESSIONAL GRADIENT (as per reference image) */
+  background: linear-gradient(
+    135deg,
+    #a58dff 0%,
+    #beb3ec 40%,
+    #da8dee 100%
+  );
 }
 
-.document-card {
+/* REMOVE ALL FLOATING / ANIMATED EFFECTS */
+.hero-modern::before,
+.hero-modern::after,
+.hero-modern .blob-center,
+.hero-modern .blob-top-right,
+.hero-modern .blob-bottom-left,
+.hero-noise-overlay,
+.hero-light-sweep {
+  display: none !important;
+}
+
+/* CONTENT LAYER SAFETY */
+.hero-modern * {
+  position: relative;
+  z-index: 2;
+}
+/* Solution cards clean layout */
+.solution-section .blog-post-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 14px;
   background: #ffffff;
-  border-radius: 12px;
-  padding: 2.5rem 2rem;
-  text-align: center;
-  border: 1px solid #eef2f7;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+  transition: transform .25s ease, box-shadow .25s ease;
 }
 
-.document-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+.solution-section .blog-post-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+}
+.solution-section .blog-post-item {
+  display: flex;
+  gap: 1rem;
+  padding: 1.2rem 1.4rem;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.04);
 }
 
-.document-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 4.5rem;
-  height: 4.5rem;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #f3f4ff, #eef2ff);
-  color: #605dba;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 8px 16px rgba(96, 93, 186, 0.1);
-}
-
-.document-icon svg {
-  width: 2.25rem;
-  height: 2.25rem;
-}
-
-.document-title {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 1.2rem;
+.solution-section .blog-post-item h4 {
+  font-size: 1rem;
   font-weight: 600;
-  color: #343f52;
-  margin-bottom: 0.5rem;
+  margin-bottom: .25rem;
+  color: #1f2937;
 }
 
-.document-explanation {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.95rem;
+.solution-section .blog-post-item p {
+  font-size: .9rem;
   color: #6b7280;
-  line-height: 1.65;
+}
+/* ===== Best Solution Section – FINAL STABLE FIX ===== */
+.solution-section > .container .grid {
+  display: grid !important;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .solution-section > .container .grid {
+    grid-template-columns: 1fr 1fr; /* perfect 50–50 */
+  }
+}
+
+.solution-section .blog-post-item {
+  width: auto !important;
+  margin: 0 !important;
+}
+/* ===== Best Solution Card Accent Border ===== */
+.solution-section .blog-post-item {
+  position: relative;
+  padding-left: 1.75rem; /* border ke liye space */
+}
+
+/* left accent bar */
+.solution-section .blog-post-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15%;
+  width: 4px;
+  height: 70%;
+  background: linear-gradient(
+    to bottom,
+    #605dba,
+    #8f8cff
+  );
+  border-radius: 4px;
+  opacity: 0.85;
+}
+
+/* hover thoda premium feel */
+.solution-section .blog-post-item:hover::before {
+  height: 85%;
+  top: 7.5%;
+  opacity: 1;
 }

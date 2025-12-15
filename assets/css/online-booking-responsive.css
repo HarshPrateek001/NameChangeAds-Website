@@ -1,0 +1,72 @@
+/*
+  Responsive Styles for Online Name Change Advertisement Booking Page
+  ---
+  This file contains responsive adjustments for the page, ensuring optimal layout on all devices.
+  Breakpoints are aligned with the project's standards.
+*/
+
+/* 1. Extra-Large Desktops */
+@media (max-width: 1440px) {
+  /* Placeholder for 1440px styles */
+}
+
+/* 2. Standard Desktops & Laptops */
+@media (max-width: 1200px) {
+  /* Placeholder for 1200px styles */
+}
+
+/* 3. Tablets (Landscape) */
+@media (max-width: 992px) {
+  .hero-card-glass {
+    margin-top: 2rem;
+  }
+}
+
+/* 4. Tablets (Portrait) */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  .process-wrapper > div {
+    text-align: center;
+  }
+  .process-wrapper .icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* 5. Large Mobile Phones */
+@media (max-width: 600px) {
+  .display-4 {
+    font-size: 2.2rem;
+  }
+  .lead.fs-lg {
+    font-size: 1.1rem;
+  }
+  .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* 6. Standard Mobile Phones */
+@media (max-width: 480px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+  .d-flex.flex-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .d-flex.flex-row .btn {
+    width: 100%;
+  }
+}
+
+/* 7. Small Mobile Phones */
+@media (max-width: 360px) {
+  .display-4 {
+    font-size: 1.8rem;
+  }
+}

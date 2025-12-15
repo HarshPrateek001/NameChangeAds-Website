@@ -1,0 +1,157 @@
+/* Responsive styles for Mumbai Office page */
+
+/* 1. Fluid Widths */
+[style*="width: 300px"] {
+    width: 100% !important;
+    max-width: 300px !important;
+}
+
+/* 2. Fluid Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 3. Responsive Grids and Cards */
+.document-grid, .stats-grid, .timeline-flex, .how-it-works-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.card, .timeline-card, .document-card, .info-box {
+    width: 100% !important; /* Override fixed widths */
+    margin: 0 !important; /* Remove fixed margins */
+}
+
+/* 4. Hero Section */
+.hero-redesign .container {
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-redesign-left, .hero-redesign-right {
+    flex-basis: 100%;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.hero-redesign-headline {
+    font-size: 2.5rem;
+}
+
+.hero-redesign .flex.gap-4 {
+    justify-content: center;
+}
+
+/* 5. Timeline Section */
+.process-step {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.process-step:not(:last-child)::after {
+    display: none; /* Remove vertical line on mobile */
+}
+
+.timeline-flex {
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* 6. Responsive Table */
+.pricing-table-wrapper, .custom-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.pricing-table-formal-upgraded, .custom-table {
+    min-width: 600px;
+}
+
+/* 7. FAQ Accordion */
+.accordion-wrapper .card-header button {
+    white-space: normal; /* Allow text to wrap */
+    line-height: 1.4;
+}
+
+/* 8. Sidebar */
+.sidebar {
+    position: static !important; /* Non-sticky sidebar */
+    margin-top: 2rem;
+}
+
+/* 9. Remove Negative Margins/Fixed Positioning */
+[class*="mx-[- "], [class*="mt-[- "], [class*="mb-[- "] {
+    margin: 0 !important;
+}
+
+.xl\\!sticky, .lg\\!sticky {
+    position: static !important;
+}
+
+/* 10. Breakpoints */
+@media (max-width: 992px) {
+    .hero-redesign-headline {
+        font-size: 2.2rem;
+    }
+    .hero-redesign-subheading {
+        font-size: 1rem;
+    }
+    .review-flex {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .flex-wrap.mx-[-15px] {
+        margin: 0;
+    }
+    .lg\\:w-8\\/12, .lg\\:w-4\\/12 {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 18px; /* Improve mobile readability */
+    }
+    .hero-redesign-headline {
+        font-size: 2rem;
+    }
+    .hero-redesign-subheading {
+        font-size: 0.95rem;
+    }
+    .cta-btn, .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    .how-it-works-cards {
+        flex-direction: column;
+    }
+    .arrow-icon {
+        transform: rotate(90deg);
+        margin: 1rem 0;
+    }
+    .document-grid, .stats-grid, .timeline-flex {
+        grid-template-columns: 1fr;
+    }
+    .offcanvas-body .navbar-nav {
+      align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-redesign-headline {
+        font-size: 1.8rem;
+    }
+    .hero-redesign-subheading {
+        font-size: 0.9rem;
+    }
+    .cta-btn, .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .flex.gap-4 {
+        flex-direction: column;
+    }
+}

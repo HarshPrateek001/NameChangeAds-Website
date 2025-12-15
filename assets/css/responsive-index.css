@@ -259,3 +259,119 @@ footer .widget ul { padding-left: 0.5rem; }
   .how-it-works-cards .card span{ font-size:1.45rem }
 }
 
+/* --------------------------
+ FULL PAGE MOBILE COMPACT MODE
+ For screens ≤ 768px
+---------------------------*/
+@media (max-width: 768px) {
+
+  /* GLOBAL SPACING FIX */
+  section, .wrapper, .container, .row {
+    padding: 1.2rem 1rem !important;
+  }
+
+  /* HEADINGS SMALLER */
+  h1 { font-size: 24px !important; line-height: 32px !important; }
+  h2 { font-size: 20px !important; line-height: 28px !important; }
+  h3 { font-size: 17px !important; line-height: 23px !important; }
+  p  { font-size: 14px !important; line-height: 20px !important; }
+
+  /* HERO COMPACT */
+  .hero-modern {
+    padding: 40px 16px 30px !important;
+    min-height: auto !important;
+  }
+
+  .hero-content {
+    margin-top: 10px !important;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-btn {
+    padding: 10px 16px !important;
+    font-size: 14px !important;
+    width: 100% !important;
+  }
+
+  /* BLOBS SMALLER & FADED */
+  .hero-modern::before,
+  .hero-modern::after {
+    width: 180px !important;
+    height: 180px !important;
+    filter: blur(45px) !important;
+    opacity: 0.30 !important;
+  }
+
+  /* CARD GRID COMPACT */
+  .card, 
+  .hero-right-placeholder .card,
+  .testimonial-swiper .swiper-slide {
+    padding: 1rem !important;
+    border-radius: 12px !important;
+    width: 100% !important;
+    margin: 0 auto 1rem !important;
+  }
+
+  /* REMOVE HEAVY SHADOWS ON MOBILE */
+  .card, .hero-right-placeholder .card {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.07) !important;
+  }
+
+  /* CARD ANIMATION AREA SMALLER */
+  .hero-right-placeholder {
+    height: 25rem !important;
+  }
+
+  .hero-right-placeholder .card {
+    width: 90% !important;
+    right: 0.5rem !important;
+  }
+
+  /* ICONS SMALLER */
+  i, .slide-icon {
+    font-size: 20px !important;
+  }
+
+  /* FOOTER COMPACT */
+  footer {
+    padding: 1.5rem 1rem !important;
+  }
+
+  footer p, footer li {
+    font-size: 13px !important;
+  }
+
+  /* BUTTONS SITE-WIDE */
+  button, .btn, a.btn {
+    padding: 10px 16px !important;
+    font-size: 14px !important;
+  }
+
+  /* GENERAL SECTION SEPARATION CLEANER */
+  .section-title {
+    margin-bottom: 1.2rem !important;
+  }
+
+  .mb-lg { margin-bottom: 1.5rem !important; }
+  .mt-lg { margin-top: 1.5rem !important; }
+}
+header, nav, .navbar {
+  position: relative;
+  z-index: 99; /* navbar always above blobs */
+}
+/* ===== FIX: Solution Section Grid Override ===== */
+.solution-section .blog-post {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 2rem !important;
+}
+
+@media (max-width: 768px) {
+  .solution-section .blog-post {
+    grid-template-columns: 1fr !important;
+  }
+}

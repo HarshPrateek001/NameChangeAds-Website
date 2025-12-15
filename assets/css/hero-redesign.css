@@ -243,3 +243,68 @@
     animation: rotate-cylinder 14s infinite linear;
   }
 }
+/* HERO SLIDER – SERVICE STYLE CARDS */
+
+.hero-swiper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;         /* CENTER */
+  padding: 2.5rem 1rem;   /* SIDE GAP */
+  overflow: hidden;
+}
+
+.hero-swiper .swiper-wrapper {
+  align-items: stretch;
+  display: flex;
+  align-items: stretch;
+}
+
+.hero-slide {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 2rem 1.8rem;
+  text-align: center;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Hover effect – corporate style */
+.hero-slide:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* Heading */
+.hero-slide h4 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #2d2a7c;
+  margin-bottom: 0.6rem;
+}
+
+/* Text */
+.hero-slide p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* Swiper arrows */
+.hero-swiper .swiper-button-next,
+.hero-swiper .swiper-button-prev {
+  color: #2d2a7c;
+}
+
+.hero-swiper .swiper-button-next::after,
+.hero-swiper .swiper-button-prev::after {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+

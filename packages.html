@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Select name change ad packages in leading newspapers in Bangalore with fast, legal & hassle-free service.">
+  <meta name="keywords"
+    content="name change ads bangalore, newspaper advertisement, package, gazette notification, name change affidavit">
+  <title>Name Change Ads in Bangalore (Bengaluru) | Name Changed Ads</title>
+
+  <link rel="shortcut icon" href="./assets/img/favicon.png">
+  <link rel="stylesheet" type="text/css" href="./assets/fonts/unicons/unicons.css">
+  <link rel="stylesheet" href="./assets/css/plugins.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./assets/css/colors/grape.css">
+  <link rel="stylesheet" href="./assets/css/responsive-index.css">
+  
+  <!-- Fonts -->
+  <link rel="preload" href="./assets/css/fonts/space.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap">
+
+  <style>
+    /* ========= CUSTOM CSS FOR PACKAGE PAGE ========= */
+    
+    :root {
+      --color-primary: #605dba;
+      --color-primary-dark: #4f46e5;
+      --color-secondary: #f0f0f8;
+      --color-text: #343f52;
+      --color-text-light: #60697b;
+      --border-color: #e6e9ef;
+      --card-shadow: 0 0 1.25rem rgba(30, 34, 40, 0.04);
+      --card-shadow-hover: 0 1rem 3rem rgba(30, 34, 40, 0.15);
+    }
+
+    body {
+      font-family: 'Manrope', sans-serif;
+      background-color: #fefefe;
+      color: var(--color-text-light);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--color-text);
+      font-family: 'Manrope', sans-serif;
+      font-weight: 700;
+    }
+
+    /* Page Header */
+    .page-header-bg {
+        background-color: #f3f5f7;
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+        text-align: center;
+    }
+
+    /* Layout Grid */
+    .main-layout {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 3rem;
+      gap: 2rem;
+    }
+
+    .sidebar-col {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .content-col {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    @media (min-width: 992px) {
+      .sidebar-col {
+        flex: 0 0 280px;
+        max-width: 280px;
+      }
+      .content-col {
+        flex: 1;
+        max-width: calc(100% - 312px); /* 280px + 32px gap */
+      }
+    }
+
+    /* Filter Card */
+    .filter-card {
+      background: #fff;
+      border: 1px solid var(--border-color);
+      border-radius: 0.8rem;
+      padding: 1.5rem;
+      position: sticky;
+      top: 6rem;
+      box-shadow: var(--card-shadow);
+    }
+
+    .filter-header {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #959ca9;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .form-select-custom {
+      width: 100%;
+      padding: 0.6rem 1rem;
+      border: 1px solid #dce1e7;
+      border-radius: 0.4rem;
+      font-size: 0.9rem;
+      color: var(--color-text);
+      background-color: #fff;
+      margin-bottom: 1rem;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343f52' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      background-size: 16px 12px;
+      appearance: none;
+    }
+
+    .form-select-custom:focus {
+        border-color: var(--color-primary);
+        outline: 0;
+    }
+
+    .btn-filter {
+      width: 100%;
+      background: var(--color-primary);
+      color: #fff;
+      border: none;
+      padding: 0.7rem;
+      border-radius: 0.4rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .btn-filter:hover {
+        background: var(--color-primary-dark);
+        color: #fff;
+    }
+
+    /* Steps Bar */
+    .steps-bar {
+      display: flex;
+      justify-content: space-between;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 0.6rem;
+      border: 1px solid var(--border-color);
+      margin-bottom: 2rem;
+      gap: 1rem;
+      overflow-x: auto;
+    }
+
+    .step-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--color-text-light);
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+
+    .step-item.active {
+      color: var(--color-primary);
+      font-weight: 700;
+    }
+
+    .step-number {
+      width: 28px;
+      height: 28px;
+      background: #f0f0f8;
+      color: var(--color-text-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .step-item.active .step-number {
+      background: var(--color-primary);
+      color: #fff;
+    }
+
+    /* Package Grid */
+    .packages-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .package-card {
+      background: #fff;
+      border: 1px solid var(--border-color);
+      border-radius: 0.8rem;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .package-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--card-shadow-hover);
+      border-color: rgba(96, 93, 186, 0.3);
+    }
+
+    .best-seller-badge {
+      position: absolute;
+      top: 15px;
+      right: -30px;
+      background: #fab758;
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 5px 30px;
+      transform: rotate(45deg);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .pkg-logo {
+      height: 40px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+    }
+
+    .pkg-title {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: var(--color-text);
+    }
+
+    .pkg-desc {
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+      color: var(--color-text-light);
+      line-height: 1.5;
+    }
+
+    .pkg-includes {
+        background: #f8f9fa;
+        padding: 0.8rem;
+        border-radius: 0.4rem;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+        border-left: 3px solid var(--color-primary);
+    }
+
+    .pkg-price {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #e2626b;
+      margin-bottom: 1rem;
+    }
+
+    .pkg-price small {
+        font-size: 0.8rem;
+        color: #959ca9;
+        font-weight: 500;
+    }
+
+    .pkg-actions {
+      margin-top: auto;
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .btn-pkg {
+      flex: 1;
+      padding: 0.6rem;
+      font-size: 0.85rem;
+      border-radius: 50rem;
+      font-weight: 600;
+      text-align: center;
+      transition: 0.2s;
+    }
+
+    .btn-pkg-primary {
+      background: var(--color-primary);
+      color: #fff;
+      border: 1px solid var(--color-primary);
+    }
+    .btn-pkg-primary:hover {
+        background: var(--color-primary-dark);
+        color: #fff;
+    }
+
+    .btn-pkg-outline {
+      background: transparent;
+      color: var(--color-primary);
+      border: 1px solid var(--color-primary);
+    }
+    .btn-pkg-outline:hover {
+        background: #f0f0f8;
+        color: var(--color-primary-dark);
+    }
+
+    /* Content Sections (SEO Text) */
+    .content-card {
+        background: #fff;
+        border-radius: 0.8rem;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        border: 1px solid var(--border-color);
+    }
+    
+    .content-card h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: var(--color-text);
+    }
+    
+    .content-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+        margin-top: 1.5rem;
+        color: var(--color-text);
+    }
+
+    .content-card p, .content-card li {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+    }
+
+    .info-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1rem;
+    }
+
+    .info-list li {
+        position: relative;
+        padding-left: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .info-list li::before {
+        content: '\2713'; /* Checkmark */
+        position: absolute;
+        left: 0;
+        color: var(--color-primary);
+        font-weight: bold;
+    }
+
+    .sample-ad-box {
+        background: #fef3e4;
+        border: 1px dashed #fab758;
+        padding: 1rem;
+        border-radius: 0.4rem;
+        margin-bottom: 1rem;
+        font-family: 'Courier New', monospace;
+        font-size: 0.9rem;
+        color: #343f52;
+    }
+
+    /* Gazette Table */
+    .gazette-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+    .gazette-table th {
+        background-color: #f3f5f7;
+        padding: 0.8rem;
+        text-align: left;
+        font-weight: 700;
+        color: var(--color-text);
+        border: 1px solid var(--border-color);
+    }
+    .gazette-table td {
+        padding: 0.8rem;
+        border: 1px solid var(--border-color);
+        color: var(--color-text-light);
+    }
+    .gazette-table tr:nth-child(even) {
+        background-color: #fbfbfb;
+    }
+
+    /* Accordion FAQ Custom Override */
+    .accordion-item {
+        border: 1px solid var(--border-color);
+        border-radius: 0.5rem;
+        margin-bottom: 0.8rem;
+        overflow: hidden;
+    }
+    .accordion-button {
+        background-color: #fff;
+        color: var(--color-text);
+        font-weight: 600;
+        font-size: 0.95rem;
+        padding: 1rem 1.25rem;
+    }
+    .accordion-button:not(.collapsed) {
+        color: var(--color-primary);
+        background-color: #f0f0f8;
+        box-shadow: none;
+    }
+    .accordion-body {
+        padding: 1.25rem;
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+    
+    .ordered-list {
+        list-style: decimal;
+        padding-left: 1.2rem;
+    }
+    .ordered-list li {
+        margin-bottom: 0.8rem;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="grow shrink-0">
+
+    <!-- ===== HEADER (Same as Index) ===== -->
+    <header class="wrapper bg-light">
+      <nav class="navbar navbar-expand-lg center-nav transparent navbar-light caret-none">
+        <div class="container xl:!flex-row lg:!flex-row !flex-nowrap items-center">
+          <div class="navbar-brand w-full">
+            <a href="./index.html">
+              <img src="./assets/img/namechangeadssmalllogo.png" style="max-height: 40px;" alt="Name Changed Ads">
+            </a>
+          </div>
+          <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+            <div class="offcanvas-header xl:!hidden lg:!hidden flex items-center justify-between flex-row p-6">
+              <h3 class="!text-white xl:!text-[1.5rem] !mb-0">Name Changed Ads</h3>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body xl:!ml-auto lg:!ml-auto flex flex-col !h-full">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link font-bold !text-[.85rem]" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link font-bold !text-[.85rem]" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link font-bold !text-[.85rem]" href="index.html#process">How It Works</a></li>
+                <li class="nav-item"><a class="nav-link font-bold !text-[.85rem]" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link font-bold !text-[.85rem]" href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-other w-full !flex !ml-auto">
+            <ul class="navbar-nav !flex-row !items-center !ml-auto">
+              <li class="nav-item"><a class="nav-link" href="https://wa.me/919326098181" target="_blank"><i class="uil uil-whatsapp !text-[1.2rem] text-green-600"></i></a></li>
+              <li class="nav-item xl:!hidden lg:!hidden">
+                <button class="hamburger offcanvas-nav-btn"><span></span></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <section class="page-header-bg">
+        <div class="container">
+            <h1 class="display-3 mb-2">Name Change Ads in Bangalore (Bengaluru)</h1>
+            <p class="lead fs-lg mb-0 text-muted">Online booking from ₹799, accepted at Passport Office in Bengaluru.</p>
+        </div>
+    </section>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <section class="wrapper !bg-[#f9fafb] pb-16">
+      <div class="container">
+        
+        <div class="main-layout">
+            
+            <!-- LEFT SIDEBAR: FILTER -->
+            <div class="sidebar-col">
+                <aside class="filter-card">
+                    <div class="filter-header"><i class="uil uil-filter"></i> Edit Your Search</div>
+                    
+                    <div class="mb-3">
+                        <label class="text-xs font-bold text-gray-500 mb-1 block">Ad Category</label>
+                        <select class="form-select-custom">
+                            <option selected>Name Change</option>
+                            <option>Lost & Found</option>
+                            <option>Matrimonial</option>
+                            <option>Public Notice</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="text-xs font-bold text-gray-500 mb-1 block">City</label>
+                        <select class="form-select-custom">
+                            <option selected>Bangalore</option>
+                            <option>Mumbai</option>
+                            <option>Delhi</option>
+                            <option>Chennai</option>
+                            <option>Hyderabad</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="text-xs font-bold text-gray-500 mb-1 block">Newspaper Type</label>
+                        <select class="form-select-custom">
+                            <option selected>Any</option>
+                            <option>National (English)</option>
+                            <option>Regional (Kannada)</option>
+                        </select>
+                    </div>
+
+                    <button class="btn-filter">Update Results</button>
+                    
+                    <div class="mt-6 pt-6 border-t border-gray-200">
+                        <p class="text-xs text-gray-500 mb-2 font-bold uppercase">Need Help?</p>
+                        <p class="text-sm mb-1"><i class="uil uil-phone-alt mr-1"></i> +91 9326098181</p>
+                        <p class="text-sm"><i class="uil uil-envelope mr-1"></i> info@riyoadvertising.com</p>
+                    </div>
+                </aside>
+            </div>
+
+            <!-- RIGHT CONTENT: PACKAGES & INFO -->
+            <div class="content-col">
+                
+                <!-- STEPS INDICATOR -->
+                <div class="steps-bar">
+                    <div class="step-item active">
+                        <div class="step-number">1</div> Select Package
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">2</div> Compose Ad
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">3</div> Select Date
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">4</div> Payment
+                    </div>
+                </div>
+
+                <!-- PACKAGES GRID -->
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-xl font-bold m-0 text-[#343f52]">Popular Packages</h3>
+                    <div class="text-sm text-gray-500 hidden md:block"><i class="uil uil-check-circle text-green-500"></i> Valid for Passport</div>
+                </div>
+
+                <div class="packages-grid">
+                    
+                    <!-- Package 1 -->
+                    <article class="package-card">
+                        <img src="./assets/img/logos/times-of-india.png" alt="TOI" class="pkg-logo">
+                        <h4 class="pkg-title">Times of India (Bangalore)</h4>
+                        <div class="pkg-includes">
+                            <strong>Includes:</strong> Times of India (English) + Vijay Karnataka (Kannada)
+                        </div>
+                        <p class="pkg-desc">Best combo for Passport & Govt. work. Covers 1 English & 1 Local newspaper.</p>
+                        <div class="pkg-price">₹ 1,450 <small>/ 5 Lines</small></div>
+                        <div class="pkg-actions">
+                             <button class="btn-pkg btn-pkg-outline">Details</button>
+                             <button class="btn-pkg btn-pkg-primary">Select</button>
+                        </div>
+                        <div class="best-seller-badge">Best Seller</div>
+                    </article>
+
+                    <!-- Package 2 -->
+                    <article class="package-card">
+                        <img src="./assets/img/logos/deccan-herald.png" onerror="this.src='./assets/img/logos/times-of-india.png'" alt="Deccan Herald" class="pkg-logo">
+                        <h4 class="pkg-title">Deccan Herald + Prajavani</h4>
+                        <div class="pkg-includes">
+                            <strong>Includes:</strong> Deccan Herald (English) + Prajavani (Kannada)
+                        </div>
+                        <p class="pkg-desc">Popular combo in Karnataka. Accepted at all local government offices.</p>
+                        <div class="pkg-price">₹ 1,100 <small>/ 5 Lines</small></div>
+                        <div class="pkg-actions">
+                             <button class="btn-pkg btn-pkg-outline">Details</button>
+                             <button class="btn-pkg btn-pkg-primary">Select</button>
+                        </div>
+                    </article>
+
+                    <!-- Package 3 -->
+                    <article class="package-card">
+                        <img src="./assets/img/logos/the-hindu.png" onerror="this.src='./assets/img/logos/times-of-india.png'" alt="The Hindu" class="pkg-logo">
+                        <h4 class="pkg-title">The Hindu (Bangalore)</h4>
+                        <div class="pkg-includes">
+                            <strong>Includes:</strong> The Hindu (English) - Single Edition
+                        </div>
+                        <p class="pkg-desc">Premium English daily. Note: Requires additional local paper for passport.</p>
+                        <div class="pkg-price">₹ 799 <small>/ 3 Lines</small></div>
+                        <div class="pkg-actions">
+                             <button class="btn-pkg btn-pkg-outline">Details</button>
+                             <button class="btn-pkg btn-pkg-primary">Select</button>
+                        </div>
+                    </article>
+
+                </div>
+
+                <!-- Intro Card -->
+                <div class="content-card">
+                    <h2 class="text-center text-primary uppercase text-sm tracking-wide mb-2">Have You Changed Your Name?</h2>
+                    <h3 class="text-center mt-0 mb-4">Change of Name Ads in Bangalore Newspaper Online starts from ₹799/-</h3>
+                    <p>Book your Change of Name ad in Bangalore newspapers online – starting from just ₹799 for 1 Local + 1 National newspaper, commonly accepted at the Passport Office.</p>
+                    <p>All you require is 1 self attested Photo ID evidence (PAN / Aadhaar with the right name). There is no necessity to go to a newspaper office, all is done online with telephone and WhatsApp assistance.</p>
+                    
+                    <h3 class="mt-6 mb-3">Why book your Bangalore Name Change Ad here?</h3>
+                    <ul class="info-list">
+                        <li>100% online process – no office visits.</li>
+                        <li>Only 1 self-attested ID proof required (PAN / Aadhaar etc.).</li>
+                        <li>1 English + 1 Kannada newspaper combo, accepted for passport and other legal work.</li>
+                        <li>Simple format help + sample ads for Bangalore.</li>
+                        <li>WhatsApp and phone support till your ad is published.</li>
+                    </ul>
+                    
+                    <div class="mt-6 text-center">
+                        <p class="mb-3">Click below to start.</p>
+                        <button class="btn-pkg btn-pkg-primary px-8 py-3">Book Now</button>
+                        <a href="https://wa.me/919326098181" class="btn-pkg btn-pkg-outline px-8 py-3 ml-2">Chat on WhatsApp</a>
+                    </div>
+                </div>
+
+                <!-- Simple Steps Card -->
+                <div class="content-card">
+                    <h2>Simple Steps: Name Change Ad in Bangalore Newspapers</h2>
+                    <p>If you need to publish a name change ad in Bangalore newspapers, here’s a simple guide to help you through the process.</p>
+                    
+                    <div class="ordered-list-wrapper">
+                        <ol class="ordered-list">
+                            <li>
+                                <strong>Choose your newspapers:</strong>
+                                <p class="mb-1">For most passport and legal purposes, you should publish in two newspapers:</p>
+                                <ul class="list-disc pl-5 mb-2">
+                                    <li>One English newspaper (like The Times of India or Deccan Herald)</li>
+                                    <li>One Kannada newspaper (like Vijay Karnataka or Prajavani)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Prepare Your Details:</strong>
+                                <p class="mb-1">Prepare your Name Change Ad using this format. Keep these details ready (they should match your affidavit / ID):</p>
+                                <ul class="list-disc pl-5 mb-2">
+                                    <li>Old full name & New name</li>
+                                    <li>Father’s / spouse’s name</li>
+                                    <li>Age and complete Bangalore address</li>
+                                    <li>Affidavit number/date & Notary name (if available)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Upload documents and make payment:</strong>
+                                <p class="mb-1">You’ll need to provide: Self-attested photo ID (Aadhaar, PAN, etc.) and Payment for the ad.</p>
+                            </li>
+                            <li>
+                                <strong>Choose a Publishing Date:</strong>
+                                <p class="mb-1">Select your preferred publication date. Next Day is available if you submit before 3:00 pm.</p>
+                            </li>
+                            <li>
+                                <strong>Confirm Your Booking:</strong>
+                                <p class="mb-1">You’ll get a confirmation email and a reminder 24 hours before the ad is published.</p>
+                            </li>
+                            <li>
+                                <strong>Check the Publication:</strong>
+                                <p class="mb-1">Once published, check for accuracy. If there’s a mistake, we’ll re-publish it free of charge.</p>
+                            </li>
+                            <li>
+                                <strong>Collect Your Copies:</strong>
+                                <p class="mb-1">You’ll get a soft copy via email. You can also buy printed copies from your local vendor.</p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- When Needed Card -->
+                <div class="content-card">
+                    <h2>When is a Name Change Ad in Bangalore needed?</h2>
+                    <p>Publishing Name Change advertisements in two newspapers (1 national and 1 local) is a formality for applying for passport and other legal purposes in the following circumstances:</p>
+                    <ul class="info-list">
+                        <li>Change of one’s own name / father’s name</li>
+                        <li>Change of religion from X to Y</li>
+                        <li>Change in Spelling</li>
+                        <li>Changing long names to short</li>
+                        <li>Changing your surname</li>
+                        <li>Name change ads in Bangalore / Bengaluru after marriage</li>
+                        <li>Name in birth certificate does not match with the leaving certificate</li>
+                    </ul>
+                    <p class="mt-4 text-sm bg-blue-50 p-3 rounded text-blue-800">
+                        <strong>Note:</strong> Deed Poll Affidavit / Annexure E required earlier at the Passport Office for Change of Name Ads has been DISCONTINUED. Now, only a self-attested Photo Identity proof with the correct name, along with a newspaper ad in 1 local and 1 National Newspaper, is required!
+                    </p>
+                </div>
+
+                <!-- Sample Ads Card -->
+                <div class="content-card">
+                    <h3>Passport-safe Name Change Sample Ads</h3>
+                    <p>Use these formats to draft your ad content easily.</p>
+                    
+                    <div class="sample-ad-box">
+                        I, Puneet Srivastava, R/o No. 1622 2nd floor, 3rd Stage, block-50, Austin Town, Bangalore-560047, have changed my daughter’s name (minor) from Saanvi Srivastava to Navya Srivastava.
+                    </div>
+                    <div class="sample-ad-box">
+                        I, Khushbu Sehgal, R/o # G1412, Ozone Evergreens Apts, Harlur road, off Sarjapur road, Bangalore-560102, have changed my name to Khushboo Sehgal.
+                    </div>
+                    <div class="sample-ad-box">
+                        I, Chetan Singla, R/o A-402, 3rd Floor, Neeta Gardens Apartment, Magadi Road, Bangalore North, Karnataka-560023, have changed my name to Chetan Agarwal.
+                    </div>
+                    <div class="sample-ad-box">
+                        I, N. Bharathamma, R/o # 95, 1st main, 1st cross, Ambedkar Nagar, Whitefield, Bangalore-560066, have changed my name to Bharathi N.
+                    </div>
+                    <div class="sample-ad-box">
+                        I, Roopashree Y.R., R/a 14A Cow Coody Estate, Sakaleshpur Taluk, Hassan district 573134, changed my name to Roopashree Bhave.
+                    </div>
+                     <div class="sample-ad-box">
+                        I, Yasmeen Begum, R/o No. 1620 1st floor, 3rd Stage, block-50, Austin Town, Bangalore-560047, have changed my name to Yasmeen Baquer.
+                    </div>
+                     <div class="sample-ad-box">
+                        I, Supriya N.P., R/o #391/10, 6th Mn, 4th ‘A’ crs, Srinagar, B’lore-50, have changed my name to M. Supriya Deepak.
+                    </div>
+                </div>
+
+                <!-- Gazette Card -->
+                <div class="content-card">
+                    <h2>Gazette Name Change – Bangalore (Optional Next Step)</h2>
+                    <p>You can also complete a Gazette name change after your newspaper adverts should you desire more powerful evidence to PAN, Aadhaar, bank or other records.</p>
+                    
+                    <h3>Karnataka Gazette Office Address:</h3>
+                    <p class="bg-gray-50 p-4 rounded text-sm">
+                        <strong>GOVERNMENT GAZETTE OFFICE</strong><br>
+                        No 3, Government Printing Press, Vikasa Soudha, Dr Ambedkar Road, Ambedkar Veedhi, Bangalore – 560001.
+                    </p>
+
+                    <h3>Gazette Name Change Fees in Bangalore</h3>
+                    <div class="overflow-x-auto">
+                        <table class="gazette-table">
+                            <thead>
+                                <tr>
+                                    <th>Sr. No</th>
+                                    <th>Category</th>
+                                    <th>Documents Needed</th>
+                                    <th>Fee (₹)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td><td>Adult</td><td>10th/12th marksheet, Aadhaar, Affidavit, Newspaper ad, photo</td><td>1,100</td></tr>
+                                <tr><td>2</td><td>Minor</td><td>Child's BC, PAN, Aadhaar, Affidavit, Newspaper ad, photo</td><td>1,100</td></tr>
+                                <tr><td>3</td><td>Marriage</td><td>10th/12th marksheet, PAN, Aadhaar, Affidavit, Newspaper ad, photo</td><td>1,100</td></tr>
+                                <tr><td>4</td><td>Divorce</td><td>10th/12th marksheet, Divorce decree, PAN, Aadhaar, Affidavit, Newspaper ad, photo</td><td>2,750</td></tr>
+                                <tr><td>5</td><td>Child’s name after Divorce</td><td>Divorce decree, Child’s BC, PAN, Aadhaar, Affidavit, Newspaper ad, photo</td><td>3,350</td></tr>
+                                <tr><td>6</td><td>Aadhaar card Change</td><td>10th/12th marksheet, PAN, Aadhaar, Affidavit, Newspaper ad, photo</td><td>1,100</td></tr>
+                                <tr><td>7</td><td>Document Error</td><td>10th/12th marksheet, PAN, Aadhaar, Affidavit, Newspaper ad, photo</td><td>1,100</td></tr>
+                                <tr><td>8</td><td>Religion Change</td><td>Conversion Certificate, PAN, Aadhaar, Affidavit, Newspaper ad, photo</td><td>1,100</td></tr>
+                                <tr><td>9</td><td>Government Employee</td><td>Deed, PAN, Aadhaar, Newspaper ad, photo</td><td>1,100</td></tr>
+                                <tr><td>10</td><td>Public Notice</td><td>PAN, Aadhaar, Affidavit, Newspaper ad, photo</td><td>1,400</td></tr>
+                                <tr><td>11</td><td>Passport</td><td>10th/12th marksheet, PAN, Aadhaar, Affidavit, Newspaper ad, photo</td><td>1,100</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- FAQs -->
+                <div class="content-card">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    When will my ad be published and in which newspapers?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    If the Payment and Self Attested photo ID or Gazette copy reaches us by 3.00 pm the previous day, the ad gets published the next day in Bangalore Mirror and Vijay Karnataka. Both Newspapers are approved and accepted at the passport office.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Is there any problem at the Passport Office with these ads?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    No Sir, we have been placing ads since 1996. The newspapers are all reputed and always accepted at the Passport Office.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How do I get the Newspaper Copies?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We inform you 24 hrs in advance through email before the ads get published so you have sufficient time to buy the newspaper copies.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What if the ad does not get published?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Every care is taken to see that your Name change ad appears in good faith with correct spellings on the day of your choice. However, in RARE circumstances of technical/human error, our liability shall be limited to publishing the same ad FREE of cost on the next day or on the date of your choice.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Can I Cancel the ad? I have already made the Payment?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, You have the opportunity to cancel the ad anytime before the deadline after booking. All you need to do is to send us your Order ID number and send us an email at info@changeofname.in and you are refunded 100 per cent of the money. Transaction charges shall deduct only ₹50/- only.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Do you make gazette for name change in Bangalore?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes, we can help with Central / Karnataka Gazette publication. The good thing with such a gazette is that it can be applied throughout India. The time duration is 15 to 20 days. You can contact at 9844879323 to get further assistance with Bangalore gazette.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Is Annexure E/ Deed Poll still necessary?
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    A self-attested Photo ID with the proper name and the necessary newspaper advertisements is accepted in most passport offices; the Annexure E is not applied to various Change of Name applications. You have to always verify your particular Passport Seva Kendra directions.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <!-- /.content-wrapper -->
+        <div class="container py-12 xl:!py-16 lg:!py-16 md:!py-16">
+          <div class="flex flex-wrap mx-[-15px] !mt-[-30px] xl:!mt-0 lg:!mt-0">
+            <div class="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] !px-[15px] max-w-full xl:!mt-0 lg:!mt-0 !mt-[30px]">
+              <div class="widget">
+                <h4 class="widget-title !mb-3">Name Changed Ads</h4>
+                <p class="!mb-4">© 2025 applynamechange.in. <br class="hidden xl:block lg:block">All rights reserved.</p>
+                <nav class="nav social">
+                  <a class="!text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-twitter before:content-['\ed59'] !text-[#5daed5] text-[1rem]"></i></a>
+                  <a class="!text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-facebook-f before:content-['\eae2'] !text-[#4470cf] text-[1rem]"></i></a>
+                  <a class="!text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-dribbble before:content-['\eaa2'] !text-[#e94d88] text-[1rem]"></i></a>
+                  <a class="!text-[1m] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-instagram before:content-['\eb9c'] !text-[#d53581] text-[1rem]"></i></a>
+                  <a class="!text-[1rem] transition-all duration-[0.2s] ease-in-out translate-y-0 motion-reduce:transition-none hover:translate-y-[-0.15rem] m-[0_.7rem_0_0]" href="#"><i class="uil uil-youtube before:content-['\edb5'] !text-[#c8312b] text-[1rem]"></i></a>
+                </nav>
+                <!-- /.social -->
+              </div>
+              <!-- /.widget -->
+            </div>
+            <!-- /column -->
+            <div class="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] !px-[15px] max-w-full xl:!mt-0 lg:!mt-0 !mt-[30px]">
+              <div class="widget">
+                <h4 class="widget-title !mb-3">Our Offices</h4>
+                <ul class="list-unstyled !pl-0">
+                  <li class="!mt-[.35rem]"><a class="!text-[#60697b] hover:!text-[#605dba]" href="#">Mumbai Office: +91 9326098181</a></li>
+                  <li class="!mt-[.35rem]"><a class="!text-[#60697b] hover:!text-[#605dba]" href="#">Bangalore Office: +91 9844879323</a></li>
+                  <li class="!mt-[.35rem]"><a class="!text-[#60697b] hover:!text-[#605dba]" href="#">Chennai Office: +91 9892880035</a></li>
+                </ul>
+              </div>
+              <!-- /.widget -->
+            </div>
+            <!-- /column -->
+            <div class="md:w-4/12 xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] !px-[15px] max-w-full xl:!mt-0 lg:!mt-0 !mt-[30px]">
+              <div class="widget">
+                <h4 class="widget-title !mb-3">Name Change Reasons</h4>
+                <ul class="list-unstyled !pl-0">
+                  <li class="!mt-[.35rem]"><a class="!text-[#60697b] hover:!text-[#605dba]" href="#">Spelling Mistake</a></li>
+                  <li class="!mt-[.35rem]"><a class="!text-[#60697b] hover:!text-[#605dba]" href="#">Dislike of Current Name</a></li>
+                  <li class="!mt-[.35rem]"><a class="!text-[#60697b] hover:!text-[#605dba]" href="#">Name Change after Divorce</a></li>
+                  <li class="!mt-[.35rem]"><a class="!text-[#60697b] hover:!text-[#605dba]" href="#">Child's Surname Change</a></li>
+                </ul>
+              </div>
+              <!-- /.widget -->
+            </div>
+            <!-- /column -->
+            <div class="md:w-full xl:w-3/12 lg:w-3/12 w-full flex-[0_0_auto] !px-[15px] max-w-full xl:!mt-0 lg:!mt-0 !mt-[30px]">
+              <div class="widget">
+                <h4 class="widget-title !mb-3">Our Newsletter</h4>
+                <p class="!mb-5">Subscribe to our newsletter to get our news & deals delivered to you.</p>
+                <div class="newsletter-wrapper">
+                  <!-- Begin Mailchimp Signup Form -->
+                  <div id="mc_embed_signup2">
+                    <form action="https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a" method="post" id="mc-embedded-subscribe-form2" name="mc-embedded-subscribe-form" class="validate dark-fields" target="_blank" novalidate>
+                      <div id="mc_embed_signup_scroll2">
+                        <div class="!text-left input-group form-floating !relative flex flex-wrap items-stretch w-full">
+                          <input type="email" value="" name="EMAIL" class="required form-control  relative block w-full text-[.75rem] font-medium !text-[#60697b] bg-[#fefefe] bg-clip-padding border shadow-[0_0_1.25rem_rgba(30,34,40,0.04)] rounded-[0.4rem] border-solid border-[rgba(8,60,130,0.07)] transition-[border-color] duration-[0.15s] ease-in-out     focus:shadow-[0_0_1.25rem_rgba(30,34,40,0.04),unset] focus:!border-[#9fbcf0] focus-visible:!border-[#9fbcf0]   placeholder:!text-[#959ca9] placeholder:opacity-100 m-0 !pr-9 p-[.6rem_1rem] h-[calc(2.5rem_+_2px)] min-h-[calc(2.5rem_+_2px)] !leading-[1.25]" placeholder="" id="mce-EMAIL2">
+                          <label class="!ml-[0.05rem] !text-[#959ca9] text-[.75rem] absolute z-[2] h-full overflow-hidden text-start text-ellipsis whitespace-nowrap pointer-events-none origin-[0_0] px-4 py-[0.6rem] left-0 top-0" for="mce-EMAIL2">Email Address</label>
+                          <input type="submit" value="Join" name="subscribe" id="mc-embedded-subscribe2" class="btn btn-grape !text-white !bg-[#605dba] border-[#605dba] hover:text-white hover:bg-[#605dba] hover:!border-[#605dba]   active:text-white active:bg-[#605dba] active:border-[#605dba] disabled:text-white disabled:bg-[#605dba] disabled:border-[#605dba] !relative z-[2] focus:z-[5] hover:!transform-none hover:!translate-none border-0">
+                        </div>
+                        <div id="mce-responses2" class="clear">
+                          <div class="response" id="mce-error-response2" style="display:none"></div>
+                          <div class="response" id="mce-success-response2" style="display:none"></div>
+                        </div> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ddc180777a163e0f9f66ee014_4b1bcfa0bc" tabindex="-1" value=""></div>
+                        <div class="clear"></div>
+                      </div>
+                    </form>
+                  </div>
+                  <!--End mc_embed_signup-->
+                </div>
+                <!-- /.newsletter-wrapper -->
+              </div>
+              <!-- /.widget -->
+            </div>
+            <!-- /column -->
+          </div>
+          <!--/.row -->
+        </div>
+    <!-- /.container -->
+  </footer>
+
+  </div>
+
+  <script src="./assets/js/plugins.js"></script>
+  <script src="./assets/js/theme.js"></script>
+</body>
+
+</html>

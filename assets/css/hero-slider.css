@@ -1,0 +1,60 @@
+/* 
+  Scoped and Simplified Styles for the Hero Section Slider 
+*/
+
+/* 1. Main Swiper Container */
+.hero-modern .hero-swiper {
+  max-width: 800px; /* Exactly 2 cards (300px each) + 30px spaceBetween */
+  margin: 0 auto; /* Center horizontally, add space from top */
+  overflow: hidden; /* Prevents any clipping or overflow issues */
+  position: relative;
+  /* Removed padding here as it might cause cropping */
+}
+
+/* 2. Swiper wrapper and slides alignment */
+.hero-modern .hero-swiper .swiper-wrapper {
+  align-items: stretch; /* Vertically stretch slides to be the same height */
+}
+
+.hero-modern .hero-swiper .swiper-slide {
+  height: auto; /* Allow wrapper to determine height */
+  display: flex; /* Enable flexbox for inner content alignment */
+  flex-direction: column;
+}
+
+/* 3. Card Styling & Alignment Fix */
+/* Make the card itself a flex container to push content or align it. 
+   This will also ensure it fills the height of the .swiper-slide parent. */
+.hero-modern .hero-swiper .hero-slide {
+  height: 100%; /* Ensure card takes full height of slide for vertical alignment */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically within the card */
+  /* Re-applying glassmorphic base styles, ensuring no conflict with Swiper's transform */
+  background: linear-gradient(135deg, rgba(255,255,255,0.55), rgba(255,255,255,0.25));
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1.6px solid rgba(96,93,186,0.65);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.45), 0 14px 36px rgba(96,93,186,0.22);
+  border-radius: 18px; /* Maintain rounded corners */
+}
+
+/* Prevent hover effect from interfering with Swiper's calculations or causing overflow */
+.hero-modern .hero-swiper .hero-slide:hover {
+  transform: none !important;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.45), 0 14px 36px rgba(96,93,186,0.22) !important; /* Revert to non-hover shadow */
+}
+
+
+/* 4. Hide Navigation Buttons */
+.hero-modern .hero-swiper .swiper-button-next,
+.hero-modern .hero-swiper .swiper-button-prev {
+  display: none !important;
+}
+
+/* 5. Responsive adjustments for mobile */
+@media (max-width: 767px) {
+  .hero-modern .hero-swiper {
+    max-width: 250px; /* Center a single card (250px wide from new-hero.css) nicely */
+  }
+}
