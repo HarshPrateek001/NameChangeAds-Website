@@ -552,6 +552,17 @@
     .search-results-grid.visible {
         display: flex;
     }
+    /* Benefits section – icon box normalization */
+#benefits .svg-bg-lg {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
     .city-result-card {
         display: flex;
         justify-content: space-between;
@@ -746,7 +757,13 @@
     grid-template-columns: 1fr;
   }
 }
-
+#benefits .service-box-hover {
+  margin-bottom: 1.5rem !important;
+}
+#benefits .service-box-hover:hover .svg-bg {
+  transform: translateY(-2px);
+  transition: transform 0.25s ease;
+}
 
 
 
@@ -1209,7 +1226,60 @@
   }
 }
 
+#benefits .xl\:w-6\/12,
+#benefits .xl\:w-6\/12{
+  width: 42% !important ;
+}
 
+#benefits .service-box-hover {
+  align-items: flex-start;
+  display: flex;
+  gap: 1rem;
+}
+#benefits .service-box-hover .svg-bg {
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-self: center;
+}
+#benefits .service-box-hover h4 {
+  margin-top: 0;
+  margin 0 0 0.35rem 0;
+  text-align: left;
+  margin-bottom: 0.35rem;
+}
+
+#benefits .service-box-hover p {
+  margin-bottom: 0;
+  margin: 0;
+  text-align: left;
+  line-height: 1.6;
+}
+
+/* WHY CHOOSE US – image control */
+.why-img-col figure {
+  margin: 0;
+}
+
+.why-img-col img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* Desktop */
+@media (min-width: 1024px) {
+  .why-img-col img {
+  }
+}
+
+/* Large desktop */
+@media (min-width: 1280px) {
+  .why-img-col img {
+    max-height: 500px;
+  }
+}
     /* Hero Cards */
     .hero-cards {
       display: flex;
@@ -1667,6 +1737,21 @@
       <p>We guide you to government-approved newspapers to ensure acceptance.</p>
     </div>
 
+    <div class="swiper-slide hero-slide">
+      <h4>No Hidden Costs</h4>
+      <p>Worried about surprise charges? We show the total cost upfront—clear pricing with no hidden fees.</p>
+    </div>
+
+    <div class="swiper-slide hero-slide">
+      <h4>Time Consuming & Multiple Visits</h4>
+      <p>You can book within minutes from home. No repeated visits or waiting in long queues.</p>
+    </div>
+
+    <div class="swiper-slide hero-slide">
+      <h4>Difficulty Choosing a Newspaper</h4>
+      <p>We guide you to government-approved newspapers to ensure acceptance.</p>
+    </div>
+
   </div>
 
   <!-- navigation -->
@@ -1888,12 +1973,11 @@
     </section>
     <!-- /section -->
 
-    <!-- /.Section -->
-    <section class="wrapper !bg-[#F8F9FB] document-section" id="required-documents">
-      <div class="container py-12 xl:py-16 lg:py-16 md:py-16">
+    <!-- REQUIRED DOCUMENTS SECTION -->
+      <section class="wrapper !bg-[#ffffff]">
+      <div class="container pt-[4.5rem] xl:pt-28 lg:pt-28 md:pt-28 pb-[3rem] xl:pb-[4.5rem] lg:pb-[4.5rem] md:pb-[4.5rem]">
         <div class="flex flex-wrap mx-[-15px] !text-center">
-          <div
-            class="md:w-10/12 lg:w-8/12 xl:w-8/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mx-auto !relative">
+          <div class="md:w-10/12 xl:w-8/12 lg:w-8/12 w-full flex-[0_0_auto] !px-[15px] max-w-full xl:!ml-[16.66666667%] lg:!ml-[16.66666667%] md:!ml-[8.33333333%]">
             <h2 class="!text-[0.8rem] !leading-[1.35] !tracking-[0.02rem] uppercase !text-[#aab0bc] !mb-3">
               Required Documents
             </h2>
@@ -1904,113 +1988,142 @@
           </div>
           <!-- /column -->
         </div>
-        <div class="document-grid" data-cues="slideInUp" data-group="document-cards" data-delay="80">
-          <!-- Card 1 -->
-          <div class="document-card">
-            <div class="document-icon">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        <!-- /.row -->
+        <div class="flex flex-wrap mx-[-15px] !mt-[-16px] ">
+          <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mt-[40px]">
+            <div class="flex flex-row">
+              <div>
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
                 </path>
               </svg>
+              </div>
+              <div>
+                <h3 class="!text-[1.1rem] !mb-1 "><span class="text-gradient gradient-7">Notarized Affidavit</span></h3>
+                <p class="!mb-0">Declaration containing old and new name signed by a notary.</p>
+              </div>
             </div>
-            <h4 class="document-title">Notarized Affidavit</h4>
-            <p class="document-explanation">Declaration containing old and new name signed by a notary.</p>
           </div>
-          <!-- Card 2 -->
-          <div class="document-card">
-            <div class="document-icon">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          <!--/column -->
+          <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mt-[40px]">
+            <div class="flex flex-row">
+              <div>
+               <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 012-2h4a2 2 0 012 2v1m-4 0h4">
                 </path>
               </svg>
+              </div>
+              <div>
+                <h3 class="!text-[1.1rem] !mb-1"><span class="text-gradient gradient-7">Identity Proof</span></h3>
+                <p class="!mb-0">Aadhaar, PAN, Passport, Voter ID.</p>
+              </div>
             </div>
-            <h4 class="document-title">Identity Proof</h4>
-            <p class="document-explanation">Aadhaar, PAN, Passport, Voter ID.</p>
           </div>
-          <!-- Card 3 -->
-          <div class="document-card">
-            <div class="document-icon">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          <!--/column -->
+          <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mt-[40px]">
+            <div class="flex flex-row">
+              <div>
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0l-2-2">
                 </path>
               </svg>
+              </div>
+              <div>
+                <h3 class="!text-[1.1rem] !mb-1"><span class="text-gradient gradient-7">Proof of Address</span></h3>
+                <p class="!mb-0">Aadhaar, utility bill, rent agreement, bank statement.</p>
+              </div>
             </div>
-            <h4 class="document-title">Proof of Address</h4>
-            <p class="document-explanation">Aadhaar, utility bill, rent agreement, bank statement.</p>
           </div>
-          <!-- Card 4 -->
-          <div class="document-card">
-            <div class="document-icon">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          <!--/column -->
+          <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mt-[40px]">
+            <div class="flex flex-row">
+              <div>
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z">
                 </path>
               </svg>
+              </div>
+              <div>
+                <h3 class="!text-[1.1rem] !mb-1"><span class="text-gradient gradient-7">Passport-size Photograph</span></h3>
+                <p class="!mb-0">2–4 recent photographs.</p>
+              </div>
             </div>
-            <h4 class="document-title">Passport-size Photographs</h4>
-            <p class="document-explanation">2–4 recent photographs.</p>
           </div>
-          <!-- Card 5 -->
-          <div class="document-card">
-            <div class="document-icon">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          <!--/column -->
+          <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mt-[40px]">
+            <div class="flex flex-row">
+              <div>
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z">
                 </path>
               </svg>
+              </div>
+              <div>
+                <h3 class="!text-[1.1rem] !mb-1"><span class="text-gradient gradient-7">Newspaper Ad Clippings</span></h3>
+                <p class="!mb-0">Published name-change ads in English and local newspapers.</p>
+              </div>
             </div>
-            <h4 class="document-title">Newspaper Ad Clippings</h4>
-            <p class="document-explanation">Published name-change ads in English and local newspapers.</p>
           </div>
-          <!-- Card 6 -->
-          <div class="document-card">
-            <div class="document-icon">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          <!--/column -->
+          <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mt-[40px]">
+            <div class="flex flex-row">
+              <div>
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
                 </path>
               </svg>
+              </div>
+              <div>
+                <h3 class="!text-[1.1rem] !mb-1"><span class="text-gradient gradient-7">Application Form</span></h3>
+                <p class="!mb-0">Completed Gazette/name-change application form as per rules.</p>
+              </div>
             </div>
-            <h4 class="document-title">Application Form</h4>
-            <p class="document-explanation">Completed Gazette/name-change application form as per rules.
-            </p>
           </div>
-          <!-- Card 7 -->
-          <div class="document-card">
-            <div class="document-icon">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          <!--/column -->
+          <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mt-[40px]">
+            <div class="flex flex-row">
+              <div>
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M5 13l4 4L19 7"></path>
               </svg>
+              </div>
+              <div>
+                <h3 class="!text-[1.1rem] !mb-1"><span class="text-gradient gradient-7">Marriage/Legal Documents (if applicable)</span></h3>
+                <p class="!mb-0">Required for cases involving marriage, divorce, adoption.</p>
+              </div>
             </div>
-            <h4 class="document-title">Marriage/Legal Documents (if applicable)</h4>
-            <p class="document-explanation">Required for cases involving marriage, divorce, adoption.</p>
           </div>
-          <!-- Card 8 -->
-          <div class="document-card">
-            <div class="document-icon">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          <div class="md:w-6/12 lg:w-3/12 xl:w-3/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mt-[40px]">
+            <div class="flex flex-row">
+              <div>
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M12 6.253v11.494m-5.747-5.747H17.747"></path>
               </svg>
+              </div>
+              <div>
+                <h3 class="!text-[1.1rem] !mb-1"><span class="text-gradient gradient-7">Birth Certificate (if applicable)</span></h3>
+                <p class="!mb-0">Needed for corrections or updates related to birth record.</p>
+              </div>
             </div>
-            <h4 class="document-title">Birth Certificate (if applicable)</h4>
-            <p class="document-explanation">Needed for corrections or updates related to birth records.
-            </p>
           </div>
         </div>
-      </div>
+        <!--/.row -->
     </section>
 
     
@@ -2344,12 +2457,11 @@
                     </h3>
                 </div>
             </div>
-
             <div class="flex-wrap mx-[-15px] flex items-start">
                 <div class="xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !ml-auto">
                     <div class="flex flex-row !mb-8 service-box-hover">
                         <div>
-                         <div class="svg-bg svg-bg-lg bg-[#e6e5f4] !rounded-[0.8rem] !mr-5"><img src="assets/img/icons/lineal/badge.svg" style="width: 2rem; height: 2rem;" alt="Personal Identity Icon"></div> 
+                         <div class="svg-bg svg-bg-lg bg-[#e6e5f4] !rounded-[0.8rem] !mr-5"><img src="assets/img/icons/lineal/badge.svg" style="width: 1.6rem; height: 1.6rem;" alt="Personal Identity Icon"></div> 
                         </div>
                         <div>
                             <h4 class="!text-[1rem]">Personal Identity</h4>
@@ -2358,7 +2470,7 @@
                     </div>
                     <div class="flex flex-row !mb-8 service-box-hover">
                         <div>
-                            <div class="svg-bg svg-bg-lg bg-[#e1f6f0] !rounded-[0.8rem] !mr-5"><img src="assets/img/icons/lineal/heart.svg" style="width: 2rem; height: 2rem;" alt="Marriage or Divorce Icon"></div>        
+                            <div class="svg-bg svg-bg-lg bg-[#e1f6f0] !rounded-[0.8rem] !mr-5"><img src="assets/img/icons/lineal/heart.svg" style="width: 1.6rem; height: 1.6rem;" alt="Marriage or Divorce Icon"></div>        
                         </div>
                         <div>
                             <h4 class="!text-[1rem]">Marriage or Divorce</h4>
@@ -2367,7 +2479,7 @@
                     </div>
                     <div class="flex flex-row !mb-8 service-box-hover">
                         <div>
-                            <div class="svg-bg svg-bg-lg bg-[#f8e7ec] !rounded-[0.8rem] !mr-5"><img src="assets/img/icons/lineal/briefcase.svg" style="width: 2rem; height: 2rem;" alt="Professional Reasons Icon"></div> 
+                            <div class="svg-bg svg-bg-lg bg-[#f8e7ec] !rounded-[0.8rem] !mr-5"><img src="assets/img/icons/lineal/briefcase.svg" style="width: 1.6rem; height: 1.6rem;" alt="Professional Reasons Icon"></div> 
                         </div>
                         <div>
                             <h4 class="!text-[1rem]">Professional Reasons</h4>
@@ -2376,7 +2488,7 @@
                     </div>
                     <div class="flex flex-row !mb-8 service-box-hover">
                         <div>
-                            <div class="svg-bg svg-bg-lg bg-[#fef3e4] !rounded-[0.8rem] !mr-5"><img src="assets/img/icons/lineal/check-list.svg" style="width: 2rem; height: 2rem;" alt="Simplicity Icon"></div> 
+                            <div class="svg-bg svg-bg-lg bg-[#fef3e4] !rounded-[0.8rem] !mr-5"><img src="assets/img/icons/lineal/check-list.svg" style="width: 1.6rem; height: 1.6rem;" alt="Simplicity Icon"></div> 
                         </div>
                         <div>
                             <h4 class="!text-[1rem]">Simplicity</h4>
@@ -2385,7 +2497,7 @@
                     </div>
                     <div class="flex flex-row !mb-8 service-box-hover">
                         <div>
-                            <div class="svg-bg svg-bg-lg bg-[#e0e9fa] !rounded-[0.8rem] !mr-5"><img src="assets/img/icons/lineal/lock.svg" style="width: 2rem; height: 2rem;" alt="Privacy Icon"></div>
+                            <div class="svg-bg svg-bg-lg bg-[#e0e9fa] !rounded-[0.8rem] !mr-5"><img src="assets/img/icons/lineal/lock.svg" style="width: 1.6rem; height: 1.6rem;" alt="Privacy Icon"></div>
                         </div>
                         <div>
                             <h4 class="!text-[1rem]">Privacy</h4>
@@ -2394,7 +2506,7 @@
                     </div>
                 </div>
                 <div class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] !px-[15px] max-w-full xl:!sticky lg:!sticky" style="top: 8rem;">
-                    <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="https://placehold.co/600x700/e1f6f0/343f52?text=Benefits+of+Name+Change" srcset="https://placehold.co/600x700/e1f6f0/343f52?text=Benefits+of+Name+Change 2x" alt="Benefits of Name Change" loading="lazy" decoding="async"></figure>
+                    <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="assets\img\Benifits 3.jpg" srcset="https://placehold.co/600x700/e1f6f0/343f52?text=Benefits+of+Name+Change 2x" alt="Benefits of Name Change" loading="lazy" decoding="async"></figure>
                 </div>
             </div>
         </div>
@@ -2416,9 +2528,8 @@
         </div>
         <!-- /.row -->
         <div class="flex-wrap mx-[-15px] flex items-start">
-          <div class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] !px-[15px] max-w-full xl:!sticky lg:!sticky"
-            style="top: 8rem;">
-            <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="./Img/how-to-change-name-In-educational-certificates.webp" srcset="./Img/how-to-change-name-In-educational-certificates.webp 2x" alt="Trusted Service" loading="lazy" decoding="async"></figure>
+          <div class="xl:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] !px-[15px] max-w-full xl:!sticky lg:!sticky why-img-col" style="top: 8rem;">
+            <figure class="m-0 p-0"><img class="w-full max-w-full !h-auto" src="assets/img/Benifits 2.jpg" srcset="./Img/how-to-change-name-In-educational-certificates.webp 2x" alt="Trusted Service" loading="lazy" decoding="async"></figure>
           </div>
           <!-- /column -->
           <div class="xl:w-5/12 lg:w-5/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !ml-auto">
@@ -2458,6 +2569,16 @@
                 <p>Our professional crew offers the best customer service which guarantees you to have a quick, easy and hassle free experience.</p>
               </div>
             </div>
+            <div class="flex flex-row !mb-8">
+              <div>
+                <div class="svg-bg svg-bg-lg bg-[#fef3e4] !rounded-[0.8rem] !mr-5"><img src="assets/img/icons/lineal/money.svg" style="width: 2rem; height: 2rem;" alt="Simplicity Icon"></div> 
+              </div>
+              <div>
+                <h4 class="!text-[1rem]">Verified & Government-Approved Newspapers</h4>
+                <p>We publish your name change advertisement only in newspapers accepted by passport offices, banks, and government departments to avoid any rejection or delay.</p>
+              </div>
+            </div>
+
           </div>
           <!-- /column -->
         </div>
@@ -2491,11 +2612,64 @@
           </div> 
         </div>
      <!-- Reason 3 --> 
-      <div class="md:w-6/12 lg:w-4/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mt-6"> <div class="card h-full !shadow-lg !rounded-[0.8rem] p-6 service-box-hover"> <div class="svg-bg svg-bg-lg bg-custom-3 !rounded-[0.8rem] !mb-4 mx-auto"><img src="assets/img/icons/lineal/id-card.svg" style="width: 2rem; height: 2rem;" alt="ID Card Icon"></div> <h4 class="!text-[1rem]">Provides Information</h4> <p class="!mb-0">Change of name advertisements provide information about a person’s identity. They contain the person’s old name, as well as the new name that they shall be known as.</p> </div> </div> <!-- Reason 4 --> <div class="md:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mt-6 mx-auto lg:mx-0"> <div class="card h-full !shadow-lg !rounded-[0.8rem] p-6 service-box-hover"> <div class="svg-bg svg-bg-lg bg-custom-4 !rounded-[0.8rem] !mb-4 mx-auto"><img src="assets/img/icons/lineal/megaphone.svg" style="width: 2rem; height: 2rem;" alt="Megaphone Icon"></div> <h4 class="!text-[1rem]">Serves as an Announcement</h4> <p class="!mb-0">Change of name advertisements in newspapers serve as a public announcement of a name change.</p> </div> </div> <!-- Reason 5 --> <div class="md:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mt-6 mx-auto lg:mx-0"> <div class="card h-full !shadow-lg !rounded-[0.8rem] p-6 service-box-hover"> <div class="svg-bg svg-bg-lg bg-custom-5 !rounded-[0.8rem] !mb-4 mx-auto"><img src="assets/img/icons/solid/globe-2.svg" style="width: 2rem; height: 2rem;" alt="Globe Icon"></div> <h4 class="!text-[1rem]">Wide Reach of Newspapers</h4> <p class="!mb-0">In India, newspapers are read by a large number of people in cities and villages across the country. Newspapers are read by people from all walks of life.</p> </div> </div> </div> </div> </section>
+      <div class="md:w-6/12 lg:w-4/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mt-6">
+         <div class="card h-full !shadow-lg !rounded-[0.8rem] p-6 service-box-hover">
+           <div class="svg-bg svg-bg-lg bg-custom-3 !rounded-[0.8rem] !mb-4 mx-auto">
+            <img src="assets/img/icons/lineal/id-card.svg" style="width: 2rem; height: 2rem;" alt="ID Card Icon"></div> 
+            <h4 class="!text-[1rem]">Provides Information</h4> 
+            <p class="!mb-0">Change of name advertisements provide information about a person’s identity. They contain the person’s old name, as well as the new name that they shall be known as.</p> 
+          </div> 
+        </div> 
+        <!-- Reason 4 --> 
+        <div class="md:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mt-6 mx-auto lg:mx-0"> 
+          <div class="card h-full !shadow-lg !rounded-[0.8rem] p-6 service-box-hover"> 
+            <div class="svg-bg svg-bg-lg bg-custom-4 !rounded-[0.8rem] !mb-4 mx-auto">
+              <img src="assets/img/icons/lineal/megaphone.svg" style="width: 2rem; height: 2rem;" alt="Megaphone Icon">
+            </div> 
+            <h4 class="!text-[1rem]">Serves as an Announcement</h4> 
+            <p class="!mb-0">Change of name advertisements in newspapers serve as a public announcement of a name change.</p> 
+          </div> 
+        </div> 
+        <!-- Reason 5 --> 
+         <div class="md:w-6/12 lg:w-6/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mt-6 mx-auto lg:mx-0"> 
+          <div class="card h-full !shadow-lg !rounded-[0.8rem] p-6 service-box-hover"> 
+            <div class="svg-bg svg-bg-lg bg-custom-5 !rounded-[0.8rem] !mb-4 mx-auto">
+              <img src="assets/img/icons/solid/globe-2.svg" style="width: 2rem; height: 2rem;" alt="Globe Icon"></div> 
+              <h4 class="!text-[1rem]">Wide Reach of Newspapers</h4> 
+              <p class="!mb-0">In India, newspapers are read by a large number of people in cities and villages across the country. Newspapers are read by people from all walks of life.</p> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </section>
   </div>
 </section>
     <!-- END: Benefits of Name Change Section -->
-
+  <!-- END: Main Content Wrapper -->
+  <footer class="!bg-[#ffffff] ">
+    <div class="container-card">
+      <div class="card image-wrapper bg-full bg-image bg-overlay bg-overlay-light-500 !mb-[4.5rem] [background-size:100%] bg-[center_center] bg-no-repeat !bg-scroll relative z-0 before:content-[''] before:block before:absolute before:z-[1] before:w-full before:h-full before:left-0 before:top-0 before:bg-[rgba(255,255,255,.5)] xxl:rounded-[.8rem] rounded-0" data-image-src="./assets/img/photos/bg22.png">
+        <div class="card-body py-[4.5rem] px-0">
+          <div class="container">
+            <div class="flex flex-wrap mx-[-15px] !text-center">
+              <div class="xl:w-11/12 xxl:w-9/12 w-full flex-[0_0_auto] !px-[15px] max-w-full !mx-auto">
+                <h2 class="!text-[0.8rem] !tracking-[0.02rem] !leading-[1.35] uppercase text-gradient gradient-1 !mb-3">Want To Connect</h2>
+                <h3 class="xl:!text-[1.9rem] !text-[calc(1.315rem_+_0.78vw)] font-semibold !leading-[1.25] !tracking-[normal] !mb-7 lg:!px-[7rem] xl:!px-[7rem]">Ready to Make Your Name Change Official in Karnataka?</h3>
+              </div>
+              <!-- /column -->
+            </div>
+            <!-- /.row -->
+            <div class="flex justify-center">
+              <span><a href="tel: +919844879323"  class="btn btn-lg btn-gradient gradient-1 rounded">Call +91 9844879323</a></span>
+            </div>
+          </div>
+          <!--/.container -->
+        </div>
+        <!--/.card-body -->
+      </div>
+      <!--/.card -->
+    </div>
+</main>
     <!-- START: Testimonial Section -->
         <div class="flex flex-wrap mx-[-15px]">
           <div

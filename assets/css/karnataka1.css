@@ -1,0 +1,259 @@
+/* =========================================================
+   DIGITAL & EASY + TIMELINE – MOBILE & OVERFLOW FIX
+   CSS ONLY | NO HTML CHANGE
+========================================================= */
+
+/* ------------------------
+   GLOBAL MOBILE SAFETY
+------------------------- */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================================================
+   DIGITAL & EASY SECTION FIX
+========================================================= */
+
+.kc-section .kc-split-layout {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  width: 100%;
+}
+
+/* 50–50 desktop */
+.kc-split-text,
+.kc-split-image {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+/* image safety */
+.kc-split-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+}
+
+/* text compact */
+.kc-split-text p {
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* =========================================================
+   TIMELINE & INVESTMENT FIX
+========================================================= */
+
+.kc-section.bg-light .kc-split-layout {
+  align-items: flex-start;
+}
+
+/* checklist overflow fix */
+.kc-checklist {
+  padding-left: 0;
+  margin-top: 0.6rem;
+}
+
+.kc-checklist li {
+  padding-left: 1.6rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* =========================================================
+   MOBILE VIEW – MAIN FIX
+========================================================= */
+
+@media (max-width: 768px) {
+
+  /* STACK PROPERLY */
+  .kc-split-layout {
+    flex-direction: column !important;
+    gap: 1.6rem;
+  }
+
+  .kc-split-text,
+  .kc-split-image {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  /* IMAGE CUT FIX */
+  .kc-split-image img {
+    max-height: 260px;
+    object-fit: cover;
+  }
+
+  /* REMOVE EXTRA SIDE SPACE */
+  .kc-section {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+
+  .kc-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* TEXT SIZE OPTIMIZATION */
+  .kc-split-title {
+    font-size: 1.6rem;
+  }
+
+  .kc-split-text h4 {
+    font-size: 1rem;
+    margin-top: 1.1rem;
+  }
+
+  .kc-split-text p {
+    font-size: 0.93rem;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE (EXTRA SAFE)
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .kc-split-title {
+    font-size: 1.45rem;
+  }
+
+  .kc-split-image img {
+    max-height: 220px;
+  }
+}
+/* =========================================================
+   KARNATAKA PAGE – FINAL HARD FIX
+   Solves:
+   ✔ Image overflow
+   ✔ Mobile cut
+   ✔ Grid / flex clash
+   ✔ Padding / margin chaos
+   ✔ Row–column issue (mam wala)
+========================================================= */
+
+/* ---------- GLOBAL SAFETY ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Images can NEVER overflow */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ---------- SECTION NORMALIZATION ---------- */
+.kc-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.kc-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+/* ---------- SPLIT LAYOUT (ROW/COLUMN FIX) ---------- */
+.kc-split-layout {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  width: 100%;
+}
+
+/* 50–50 desktop (mam wali baat yahin solve hoti hai) */
+.kc-split-text,
+.kc-split-image {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+/* ---------- IMAGE CONTAINER FIX ---------- */
+.kc-split-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* VERY IMPORTANT: remove nested growth */
+.kc-split-image > img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain; /* DOCUMENT IMAGE SAFE */
+  border-radius: 14px;
+}
+
+/* ---------- TIMELINE ALIGN ---------- */
+.kc-section.bg-light .kc-split-layout {
+  align-items: flex-start;
+}
+
+/* ---------- DOCUMENT LIST SAFETY ---------- */
+.kc-checklist,
+.kc-docs-grid {
+  max-width: 100%;
+}
+
+/* ---------- MOBILE HARD FIX ---------- */
+@media (max-width: 768px) {
+
+  /* Stack layout */
+  .kc-split-layout {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .kc-split-text,
+  .kc-split-image {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* IMAGE CUT FIX (THIS IS THE CORE) */
+  .kc-split-image > img {
+    max-height: 260px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  /* Remove side overflow caused by containers */
+  .kc-section {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .kc-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* ---------- SMALL MOBILE EXTRA SAFETY ---------- */
+@media (max-width: 480px) {
+  .kc-split-image > img {
+    max-height: 220px;
+  }
+}
